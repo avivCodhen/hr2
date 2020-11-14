@@ -1,0 +1,762 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ContentModelStore">
+    <e p="$USER_HOME$/.cache/JetBrains/Rider2020.2/extResources" t="IncludeRecursive" />
+    <e p="$USER_HOME$/.cache/JetBrains/Rider2020.2/resharper-host/local/Transient/Rider/v202/SolutionCaches/_.19.00" t="ExcludeRecursive" />
+    <e p="$PROJECT_DIR$" t="IncludeRecursive">
+      <e p=".gitignore" t="Include" />
+      <e p="ClientApp" t="Include">
+        <e p=".editorconfig" t="Include" />
+        <e p=".gitignore" t="Include" />
+        <e p="README.md" t="Include" />
+        <e p="angular.json" t="Include" />
+        <e p="browserslist" t="Include" />
+        <e p="dist" t="Include">
+          <e p="3rdpartylicenses.txt" t="Include" />
+          <e p="index.html" t="Include" />
+          <e p="main-es2015.12ea42c0021d9da5e1b8.js" t="Include" />
+          <e p="main-es5.12ea42c0021d9da5e1b8.js" t="Include" />
+          <e p="polyfills-es2015.5b10b8fd823b6392f1fd.js" t="Include" />
+          <e p="polyfills-es5.8e50a9832860f7cf804a.js" t="Include" />
+          <e p="runtime-es2015.c5fa8325f89fc516600b.js" t="Include" />
+          <e p="runtime-es5.c5fa8325f89fc516600b.js" t="Include" />
+          <e p="styles.e39ea667b5e6095b03a4.css" t="Include" />
+        </e>
+        <e p="e2e" t="Include">
+          <e p="protractor.conf.js" t="Include" />
+          <e p="src" t="Include">
+            <e p="app.e2e-spec.ts" t="Include" />
+            <e p="app.po.ts" t="Include" />
+          </e>
+          <e p="tsconfig.e2e.json" t="Include" />
+        </e>
+        <e p="node_modules/@angular/animations" t="IncludeRecursive" />
+        <e p="node_modules/@angular/cdk" t="IncludeRecursive" />
+        <e p="node_modules/@angular/cli" t="IncludeRecursive" />
+        <e p="node_modules/@angular/common" t="IncludeRecursive" />
+        <e p="node_modules/@angular/compiler" t="IncludeRecursive" />
+        <e p="node_modules/@angular/compiler-cli" t="IncludeRecursive" />
+        <e p="node_modules/@angular/core" t="IncludeRecursive" />
+        <e p="node_modules/@angular/forms" t="IncludeRecursive" />
+        <e p="node_modules/@angular/material" t="IncludeRecursive" />
+        <e p="node_modules/@angular/platform-browser" t="IncludeRecursive" />
+        <e p="node_modules/@angular/platform-browser-dynamic" t="IncludeRecursive" />
+        <e p="node_modules/@angular/platform-server" t="IncludeRecursive" />
+        <e p="node_modules/@angular/router" t="IncludeRecursive" />
+        <e p="node_modules/@angular-devkit/architect" t="IncludeRecursive" />
+        <e p="node_modules/@angular-devkit/build-angular" t="IncludeRecursive" />
+        <e p="node_modules/@angular-devkit/build-optimizer" t="IncludeRecursive" />
+        <e p="node_modules/@angular-devkit/build-webpack" t="IncludeRecursive" />
+        <e p="node_modules/@angular-devkit/core" t="IncludeRecursive" />
+        <e p="node_modules/@angular-devkit/schematics" t="IncludeRecursive" />
+        <e p="node_modules/@ngtools/webpack" t="IncludeRecursive" />
+        <e p="node_modules/@nguniversal/module-map-ngfactory-loader" t="IncludeRecursive" />
+        <e p="node_modules/@types" t="IncludeRecursive">
+          <e p="events" t="IncludeRecursive" />
+          <e p="jasmine" t="IncludeRecursive" />
+          <e p="jasminewd2" t="IncludeRecursive" />
+          <e p="minimatch" t="IncludeRecursive" />
+          <e p="node" t="IncludeRecursive" />
+          <e p="source-list-map" t="IncludeRecursive" />
+        </e>
+        <e p="node_modules/acorn" t="IncludeRecursive" />
+        <e p="node_modules/ajv" t="IncludeRecursive" />
+        <e p="node_modules/ansi-colors" t="IncludeRecursive" />
+        <e p="node_modules/arg" t="IncludeRecursive" />
+        <e p="node_modules/aspnet-prerendering" t="IncludeRecursive" />
+        <e p="node_modules/blocking-proxy" t="IncludeRecursive" />
+        <e p="node_modules/bootstrap" t="IncludeRecursive" />
+        <e p="node_modules/canonical-path" t="IncludeRecursive" />
+        <e p="node_modules/codelyzer" t="IncludeRecursive" />
+        <e p="node_modules/commander" t="IncludeRecursive" />
+        <e p="node_modules/core-js" t="IncludeRecursive" />
+        <e p="node_modules/coverage-istanbul-loader" t="IncludeRecursive" />
+        <e p="node_modules/dependency-graph" t="IncludeRecursive" />
+        <e p="node_modules/domain-task" t="IncludeRecursive" />
+        <e p="node_modules/domino" t="IncludeRecursive" />
+        <e p="node_modules/es6-promise" t="IncludeRecursive" />
+        <e p="node_modules/fast-deep-equal" t="IncludeRecursive" />
+        <e p="node_modules/fast-json-stable-stringify" t="IncludeRecursive" />
+        <e p="node_modules/jasmine-core" t="IncludeRecursive" />
+        <e p="node_modules/jasmine-spec-reporter" t="IncludeRecursive" />
+        <e p="node_modules/jest-worker" t="IncludeRecursive" />
+        <e p="node_modules/jquery" t="IncludeRecursive" />
+        <e p="node_modules/karma" t="IncludeRecursive" />
+        <e p="node_modules/karma-chrome-launcher" t="IncludeRecursive" />
+        <e p="node_modules/karma-coverage-istanbul-reporter" t="IncludeRecursive" />
+        <e p="node_modules/karma-jasmine" t="IncludeRecursive" />
+        <e p="node_modules/karma-jasmine-html-reporter" t="IncludeRecursive" />
+        <e p="node_modules/license-webpack-plugin" t="IncludeRecursive" />
+        <e p="node_modules/magic-string" t="IncludeRecursive" />
+        <e p="node_modules/make-error" t="IncludeRecursive" />
+        <e p="node_modules/node-sass" t="IncludeRecursive" />
+        <e p="node_modules/oidc-client" t="IncludeRecursive" />
+        <e p="node_modules/open" t="IncludeRecursive" />
+        <e p="node_modules/parse5" t="IncludeRecursive" />
+        <e p="node_modules/popper.js" t="IncludeRecursive" />
+        <e p="node_modules/portfinder" t="IncludeRecursive" />
+        <e p="node_modules/postcss" t="IncludeRecursive" />
+        <e p="node_modules/promise" t="IncludeRecursive" />
+        <e p="node_modules/protractor" t="IncludeRecursive" />
+        <e p="node_modules/reflect-metadata" t="IncludeRecursive" />
+        <e p="node_modules/rxjs" t="IncludeRecursive" />
+        <e p="node_modules/semver-dsl" t="IncludeRecursive" />
+        <e p="node_modules/source-map" t="IncludeRecursive" />
+        <e p="node_modules/sourcemap-codec" t="IncludeRecursive" />
+        <e p="node_modules/symbol-observable" t="IncludeRecursive" />
+        <e p="node_modules/terser" t="IncludeRecursive" />
+        <e p="node_modules/tree-kill" t="IncludeRecursive" />
+        <e p="node_modules/ts-node" t="IncludeRecursive" />
+        <e p="node_modules/tslib" t="IncludeRecursive" />
+        <e p="node_modules/tslint" t="IncludeRecursive" />
+        <e p="node_modules/tsutils" t="IncludeRecursive" />
+        <e p="node_modules/typescript/lib/lib.d.ts" t="IncludeRecursive" />
+        <e p="node_modules/typescript/lib/lib.dom.d.ts" t="IncludeRecursive" />
+        <e p="node_modules/typescript/lib/lib.dom.iterable.d.ts" t="IncludeRecursive" />
+        <e p="node_modules/typescript/lib/lib.es2015.collection.d.ts" t="IncludeRecursive" />
+        <e p="node_modules/typescript/lib/lib.es2015.core.d.ts" t="IncludeRecursive" />
+        <e p="node_modules/typescript/lib/lib.es2015.d.ts" t="IncludeRecursive" />
+        <e p="node_modules/typescript/lib/lib.es2015.generator.d.ts" t="IncludeRecursive" />
+        <e p="node_modules/typescript/lib/lib.es2015.iterable.d.ts" t="IncludeRecursive" />
+        <e p="node_modules/typescript/lib/lib.es2015.promise.d.ts" t="IncludeRecursive" />
+        <e p="node_modules/typescript/lib/lib.es2015.proxy.d.ts" t="IncludeRecursive" />
+        <e p="node_modules/typescript/lib/lib.es2015.reflect.d.ts" t="IncludeRecursive" />
+        <e p="node_modules/typescript/lib/lib.es2015.symbol.d.ts" t="IncludeRecursive" />
+        <e p="node_modules/typescript/lib/lib.es2015.symbol.wellknown.d.ts" t="IncludeRecursive" />
+        <e p="node_modules/typescript/lib/lib.es2016.array.include.d.ts" t="IncludeRecursive" />
+        <e p="node_modules/typescript/lib/lib.es2016.d.ts" t="IncludeRecursive" />
+        <e p="node_modules/typescript/lib/lib.es2016.full.d.ts" t="IncludeRecursive" />
+        <e p="node_modules/typescript/lib/lib.es2017.d.ts" t="IncludeRecursive" />
+        <e p="node_modules/typescript/lib/lib.es2017.full.d.ts" t="IncludeRecursive" />
+        <e p="node_modules/typescript/lib/lib.es2017.intl.d.ts" t="IncludeRecursive" />
+        <e p="node_modules/typescript/lib/lib.es2017.object.d.ts" t="IncludeRecursive" />
+        <e p="node_modules/typescript/lib/lib.es2017.sharedmemory.d.ts" t="IncludeRecursive" />
+        <e p="node_modules/typescript/lib/lib.es2017.string.d.ts" t="IncludeRecursive" />
+        <e p="node_modules/typescript/lib/lib.es2017.typedarrays.d.ts" t="IncludeRecursive" />
+        <e p="node_modules/typescript/lib/lib.es2018.asynciterable.d.ts" t="IncludeRecursive" />
+        <e p="node_modules/typescript/lib/lib.es2018.d.ts" t="IncludeRecursive" />
+        <e p="node_modules/typescript/lib/lib.es2018.full.d.ts" t="IncludeRecursive" />
+        <e p="node_modules/typescript/lib/lib.es2018.intl.d.ts" t="IncludeRecursive" />
+        <e p="node_modules/typescript/lib/lib.es2018.promise.d.ts" t="IncludeRecursive" />
+        <e p="node_modules/typescript/lib/lib.es2018.regexp.d.ts" t="IncludeRecursive" />
+        <e p="node_modules/typescript/lib/lib.es2019.array.d.ts" t="IncludeRecursive" />
+        <e p="node_modules/typescript/lib/lib.es2019.d.ts" t="IncludeRecursive" />
+        <e p="node_modules/typescript/lib/lib.es2019.full.d.ts" t="IncludeRecursive" />
+        <e p="node_modules/typescript/lib/lib.es2019.object.d.ts" t="IncludeRecursive" />
+        <e p="node_modules/typescript/lib/lib.es2019.string.d.ts" t="IncludeRecursive" />
+        <e p="node_modules/typescript/lib/lib.es2019.symbol.d.ts" t="IncludeRecursive" />
+        <e p="node_modules/typescript/lib/lib.es2020.d.ts" t="IncludeRecursive" />
+        <e p="node_modules/typescript/lib/lib.es2020.full.d.ts" t="IncludeRecursive" />
+        <e p="node_modules/typescript/lib/lib.es2020.string.d.ts" t="IncludeRecursive" />
+        <e p="node_modules/typescript/lib/lib.es2020.symbol.wellknown.d.ts" t="IncludeRecursive" />
+        <e p="node_modules/typescript/lib/lib.es5.d.ts" t="IncludeRecursive" />
+        <e p="node_modules/typescript/lib/lib.es6.d.ts" t="IncludeRecursive" />
+        <e p="node_modules/typescript/lib/lib.esnext.array.d.ts" t="IncludeRecursive" />
+        <e p="node_modules/typescript/lib/lib.esnext.asynciterable.d.ts" t="IncludeRecursive" />
+        <e p="node_modules/typescript/lib/lib.esnext.bigint.d.ts" t="IncludeRecursive" />
+        <e p="node_modules/typescript/lib/lib.esnext.d.ts" t="IncludeRecursive" />
+        <e p="node_modules/typescript/lib/lib.esnext.full.d.ts" t="IncludeRecursive" />
+        <e p="node_modules/typescript/lib/lib.esnext.intl.d.ts" t="IncludeRecursive" />
+        <e p="node_modules/typescript/lib/lib.esnext.symbol.d.ts" t="IncludeRecursive" />
+        <e p="node_modules/typescript/lib/lib.scripthost.d.ts" t="IncludeRecursive" />
+        <e p="node_modules/typescript/lib/lib.webworker.d.ts" t="IncludeRecursive" />
+        <e p="node_modules/typescript/lib/lib.webworker.importscripts.d.ts" t="IncludeRecursive" />
+        <e p="node_modules/uri-js" t="IncludeRecursive" />
+        <e p="node_modules/webdriver-js-extender" t="IncludeRecursive" />
+        <e p="node_modules/yn" t="IncludeRecursive" />
+        <e p="node_modules/zone.js" t="IncludeRecursive" />
+        <e p="package-lock.json" t="Include" />
+        <e p="package.json" t="Include" />
+        <e p="src" t="Include">
+          <e p="app" t="Include">
+            <e p="app.component.html" t="Include" />
+            <e p="app.component.ts" t="Include" />
+            <e p="app.module.ts" t="Include" />
+            <e p="app.server.module.ts" t="Include" />
+            <e p="counter" t="Include">
+              <e p="counter.component.html" t="Include" />
+              <e p="counter.component.spec.ts" t="Include" />
+              <e p="counter.component.ts" t="Include" />
+            </e>
+            <e p="fetch-data" t="Include">
+              <e p="fetch-data.component.html" t="Include" />
+              <e p="fetch-data.component.ts" t="Include" />
+            </e>
+            <e p="file-model.ts" t="Include" />
+            <e p="home" t="Include">
+              <e p="home.component.html" t="Include" />
+              <e p="home.component.ts" t="Include" />
+            </e>
+            <e p="nav-menu" t="Include">
+              <e p="nav-menu.component.css" t="Include" />
+              <e p="nav-menu.component.html" t="Include" />
+              <e p="nav-menu.component.ts" t="Include" />
+            </e>
+            <e p="search-model.ts" t="Include" />
+          </e>
+          <e p="assets" t="Include">
+            <e p=".gitkeep" t="Include" />
+          </e>
+          <e p="custom-theme.scss" t="Include" />
+          <e p="environments" t="Include">
+            <e p="environment.prod.ts" t="Include" />
+            <e p="environment.ts" t="Include" />
+          </e>
+          <e p="index.html" t="Include" />
+          <e p="karma.conf.js" t="Include" />
+          <e p="main.ts" t="Include" />
+          <e p="polyfills.ts" t="Include" />
+          <e p="styles.css" t="Include" />
+          <e p="test.ts" t="Include" />
+          <e p="tsconfig.app.json" t="Include" />
+          <e p="tsconfig.server.json" t="Include" />
+          <e p="tsconfig.spec.json" t="Include" />
+          <e p="tslint.json" t="Include" />
+        </e>
+        <e p="tsconfig.json" t="Include" />
+        <e p="tslint.json" t="Include" />
+      </e>
+      <e p="Controllers" t="Include">
+        <e p="SearchController.cs" t="Include" />
+      </e>
+      <e p="Models" t="Include">
+        <e p="City.cs" t="Include" />
+        <e p="ErrorViewModel.cs" t="Include" />
+        <e p="FileModel.cs" t="Include" />
+        <e p="OpenedFile.cs" t="Include" />
+        <e p="SearchModel.cs" t="Include" />
+        <e p="TextModel.cs" t="Include" />
+      </e>
+      <e p="Pages" t="Include">
+        <e p="Error.cshtml" t="Include" />
+        <e p="Error.cshtml.cs" t="Include" />
+        <e p="_ViewImports.cshtml" t="Include" />
+      </e>
+      <e p="Program.cs" t="Include" />
+      <e p="Properties" t="Include">
+        <e p="launchSettings.json" t="Include" />
+      </e>
+      <e p="Searcher" t="Include">
+        <e p="FileOpenerService.cs" t="Include" />
+        <e p="FilesRepo.cs" t="Include" />
+        <e p="IOpener.cs" t="Include" />
+        <e p="InteropOpener.cs" t="Include" />
+        <e p="PdfOpener.cs" t="Include" />
+        <e p="SearchService.cs" t="Include" />
+        <e p="TextExtension.cs" t="Include" />
+        <e p="WordOpener.cs" t="Include" />
+      </e>
+      <e p="Startup.cs" t="Include" />
+      <e p="appsettings.Development.json" t="Include" />
+      <e p="appsettings.Production.json" t="Include" />
+      <e p="bin" t="ExcludeRecursive" />
+      <e p="cities.json" t="Include" />
+      <e p="hr" t="Include">
+        <e p="-קורות חיים - עינת מילר  -  מנהלת חשבונות וחשבת שכר.docx" t="Include" />
+        <e p="ATT99206 אור צור טלמיטינג.docx" t="Include" />
+        <e p="Adan CV 1020  ביוכימאי.pdf" t="Include" />
+        <e p="Algorithm_Developer_CV_-_Niv_Y.docx" t="Include" />
+        <e p="AllJobs_1013857_ja6ient  אלירן הרשקו מהנדס בניין.docx" t="Include" />
+        <e p="AllJobs_1273227_m46cgq1.docx" t="Include" />
+        <e p="AllJobs_129059_dilhbzq.docx" t="Include" />
+        <e p="AllJobs_1305963_fhce7tw  עדן דוידסון מנהלת חשבונות ושכר.docx" t="Include" />
+        <e p="AllJobs_1438037_i61t5v4 רועי אוחיון  voip.docx" t="Include" />
+        <e p="AllJobs_1452957_clekfrd.pdf" t="Include" />
+        <e p="AllJobs_1592351_hcgnwd1 (2) דן כראדי.pdf" t="Include" />
+        <e p="AllJobs_1719424_bcgkdxz  יהודית פרחי.docx" t="Include" />
+        <e p="AllJobs_1807938_fr86hz1-converted  סרגיי סוניצה NET.docx" t="Include" />
+        <e p="AllJobs_1853247_aktjhf3  בנימין נעים הנדסאי בניין.pdf" t="Include" />
+        <e p="AllJobs_1931841_eqsf84n.pdf" t="Include" />
+        <e p="AllJobs_1981217_5whpizx.docx" t="Include" />
+        <e p="AllJobs_2065610_zjrge34.docx" t="Include" />
+        <e p="AllJobs_2066150_4m6ziwf עורך דין.docx" t="Include" />
+        <e p="AllJobs_2076989_65vgk2a (1)רז אמסלם לאביב.pdf" t="Include" />
+        <e p="AllJobs_2076989_65vgk2a מתכנן מכני רן אמסלם.pdf" t="Include" />
+        <e p="AllJobs_2078980_ipgbljm (1).pdf" t="Include" />
+        <e p="AllJobs_2079621_zrvxpwg חיים זכריה מנהל חשבונות וחשב שכר.docx" t="Include" />
+        <e p="AllJobs_2147831_b1vinxu  מנהלת חשבונות וחשבת שכר דינה מנשה.docx" t="Include" />
+        <e p="AllJobs_2177281_p5u6ad4 (1).pdf" t="Include" />
+        <e p="AllJobs_2188615_3mwc6dp.docx" t="Include" />
+        <e p="AllJobs_2365969_fnig63p.docx" t="Include" />
+        <e p="AllJobs_2572459_cdahsb2.pdf" t="Include" />
+        <e p="AllJobs_2575403_jpfgcae אורי כהן פול סטאק.docx" t="Include" />
+        <e p="AllJobs_2651956_8jvyx74 (1)להעביר לאביב.pdf" t="Include" />
+        <e p="AllJobs_2713877_ht4j1kp.docx" t="Include" />
+        <e p="AllJobs_2730544_6sucxgh.docx" t="Include" />
+        <e p="AllJobs_2757213_p7mekjl.docx" t="Include" />
+        <e p="AllJobs_2848613_3cnb15z  משה אבוטבול.docx" t="Include" />
+        <e p="AllJobs_3003507_25t3h46.pdf" t="Include" />
+        <e p="AllJobs_3078588_67kvfyw דולב שיר הנדסאי בניין.docx" t="Include" />
+        <e p="AllJobs_3084102_jbda1gi.docx" t="Include" />
+        <e p="AllJobs_3116590_vyfbsc6 לוי יצחר מכשור ובקרה.docx" t="Include" />
+        <e p="AllJobs_312683_gyqcjzl   מאיר נגה  מנהל איכות.docx" t="Include" />
+        <e p="AllJobs_3162003_ig7hvq2  אלכסנדר פליידר.docx" t="Include" />
+        <e p="AllJobs_3232224_fwb3tde net azura.docx" t="Include" />
+        <e p="AllJobs_3343180_86d5eku.docx" t="Include" />
+        <e p="AllJobs_3354748_a23gpjn.docx" t="Include" />
+        <e p="AllJobs_3354748_a23gpjnשמואל קטר  מכשור ובקרה.docx" t="Include" />
+        <e p="AllJobs_3398931_d2axmwz.docx" t="Include" />
+        <e p="AllJobs_3411249_bzyacpx אלכסנדר בזיק ממונה בטיחות.docx" t="Include" />
+        <e p="AllJobs_3428511_3xtueb7 ספי האוסליך.pdf" t="Include" />
+        <e p="AllJobs_3436824_qpd8fui.docx" t="Include" />
+        <e p="AllJobs_3445305_i3fsvb5  לירון אסא.docx" t="Include" />
+        <e p="AllJobs_3510164_2r3eixt.docx" t="Include" />
+        <e p="AllJobs_3608984_vzdnsx1   דביר עופר מנהל פרוייקט בניה.docx" t="Include" />
+        <e p="AllJobs_3628473_dmkj7ae.docx" t="Include" />
+        <e p="AllJobs_3628673_jr1pauy  אורי מדר מכשור ובקרה.docx" t="Include" />
+        <e p="AllJobs_3788365_czv7wn8ננמרוד קילים.pdf" t="Include" />
+        <e p="AllJobs_3798884_23qkg7x.docx" t="Include" />
+        <e p="AllJobs_3801434_uayrtkl.docx" t="Include" />
+        <e p="AllJobs_3840636_6ji27xg.docx" t="Include" />
+        <e p="AllJobs_387961_rwl6y7i     זוהר אלמן.docx" t="Include" />
+        <e p="AllJobs_3880600_2jk6857.pdf" t="Include" />
+        <e p="AllJobs_3882656_z1i647r.docx" t="Include" />
+        <e p="AllJobs_3900245_jecfagz סונרה צורדקר שי כלכלנית אנאליסטית.docx" t="Include" />
+        <e p="AllJobs_3919978_d14seqw.docx" t="Include" />
+        <e p="AllJobs_3935996_uj3ydsp.docx" t="Include" />
+        <e p="AllJobs_3936180_dtpmnwy.docx" t="Include" />
+        <e p="AllJobs_393623_ehjrt3d.docx" t="Include" />
+        <e p="AllJobs_3947089_mal4wts.pdf" t="Include" />
+        <e p="AllJobs_3964041_f3u1tpk.docx" t="Include" />
+        <e p="AllJobs_3964725_q62py8m אור מרק.docx" t="Include" />
+        <e p="AllJobs_3967184_ak18pzm.pdf" t="Include" />
+        <e p="AllJobs_524390_hiazyg5  גדעון מור מנהל פרויקטים.docx" t="Include" />
+        <e p="AllJobs_563422_3pv6slf   דמיטרי וסרמן.docx" t="Include" />
+        <e p="AllJobs_623355_chfyq2i דמיטרי מהנדס חשמל.docx" t="Include" />
+        <e p="AllJobs_654702_2hf7jdv.docx" t="Include" />
+        <e p="AllJobs_657969_ay68jxi תומר כהן מהנדס חשמל.docx" t="Include" />
+        <e p="AllJobs_657969_ay68jxi.docx" t="Include" />
+        <e p="AllJobs_681035_aizpnlf.docx" t="Include" />
+        <e p="AllJobs_729884_5xkswi7 (1)  טלי בן דור.pdf" t="Include" />
+        <e p="COO_-_Chief_Operation_Officer_CV_-_Yoel_L (1).docx" t="Include" />
+        <e p="COO_-_Chief_Operation_Officer_CV_-_Yoel_L.docx" t="Include" />
+        <e p="CV Dana Kedem.docx" t="Include" />
+        <e p="CV Hebrew .  איברהים נאסר מהנדס אזרחי.docx" t="Include" />
+        <e p="CV_From_1477700_pq5skv6.docx" t="Include" />
+        <e p="CV_From_1677634_fpimn5z יונתן גולדשטיין מנהל חשבונות צעיר.docx" t="Include" />
+        <e p="CV_From_1700159_vgrdy7f סטלה לסקר מכירות.pdf" t="Include" />
+        <e p="CV_From_1836825_2mgs75b net.docx" t="Include" />
+        <e p="CV_From_2175940_2n86dmy  בוריס סודקוב מהנדס מכונות.docx" t="Include" />
+        <e p="CV_From_2378931_rxyfbz2.docx" t="Include" />
+        <e p="CV_From_2454108_pnamdf4.docx" t="Include" />
+        <e p="CV_From_2759622_zlvtjhk  תמרה לביץ  מנהלת חשבונות.docx" t="Include" />
+        <e p="CV_From_3097309_p3yekd8.docx" t="Include" />
+        <e p="CV_From_3192019_4zjgdnh.pdf" t="Include" />
+        <e p="CV_From_3287488_fe8ucj3.pdf" t="Include" />
+        <e p="CV_From_3881710_7lm4jwh.pdf" t="Include" />
+        <e p="CV_From_3955407_yx85tsm מנאר אגבריה.docx" t="Include" />
+        <e p="CV_From_3976456_4zcexai.docx" t="Include" />
+        <e p="CV_From_587728_r762m5k.docx" t="Include" />
+        <e p="CV_From_669398_dt4jxyn.docx" t="Include" />
+        <e p="CV_From_723636_nhfwtc1ציפי רייזנר מנהלת חשבונות וחשבת שכר.docx" t="Include" />
+        <e p="C_C++_Developer_CV_-_Software_Engineer_-_Fares_F.docx" t="Include" />
+        <e p="Compliance_-_KYC_-_Risk_Analyst_CV_-_Viktoria_L.docx" t="Include" />
+        <e p="Customer_Success_Manager_CV_-_Hagai_T.pdf" t="Include" />
+        <e p="Cv - English (1).pdf" t="Include" />
+        <e p="CvFlipHandler.docx" t="Include" />
+        <e p="Dana Kedem English CV.docx" t="Include" />
+        <e p="Data_Analyst,_BI_Analyst,_BI_Developer_CV_-_Itai_O (1).docx" t="Include" />
+        <e p="Data_Analyst,_BI_Analyst,_BI_Developer_CV_-_Itai_O.docx" t="Include" />
+        <e p="Data_Analyst_Data-Driven-Marketing_CV_-_Orel_O.docx" t="Include" />
+        <e p="Director_Engineering_and_Operations_CV_-_Sigalit_F.docx" t="Include" />
+        <e p="Director_Engineering_and_QA_-_Sigalit_F.docx" t="Include" />
+        <e p="Experienced_Full-Stack_Developer_CV_-_Aviad_T.docx" t="Include" />
+        <e p="Experienced_Full-Stack_Developer_CV_-_Saoud_A.docx" t="Include" />
+        <e p="Full-Stack_Developer_CV_-_Neil_M (1).docx" t="Include" />
+        <e p="Full-Stack_Developer_CV_-_Neil_M.docx" t="Include" />
+        <e p="Full_Stack_Developer_CV_-_Dudu_S (1).docx" t="Include" />
+        <e p="Full_Stack_Developer_CV_-_Dudu_S.docx" t="Include" />
+        <e p="Full_Stack_Developer_CV_-_Noam_D.docx" t="Include" />
+        <e p="Full_Stack_Developer_CV_-_Nofar_C.docx" t="Include" />
+        <e p="Fullstack_Developer_CV_-_Nir_E.docx" t="Include" />
+        <e p="Fullstack_Developer_CV_-_Shaked_K.docx" t="Include" />
+        <e p="Hosam Zoabi_E חוסאם זועבי מהנדס חשמל ואלקטרוניקה.docx" t="Include" />
+        <e p="Infrastructure_Process_Project_and_Delivery_Manager_CV_-_Erez_H.docx" t="Include" />
+        <e p="JTרם נחום 20.docx" t="Include" />
+        <e p="Java_C_Python_-_Software_Developer_CV_-_Dima_M.docx" t="Include" />
+        <e p="Junior_C++_Software_Embedded_Developer_CV_-_Yakov_S.docx" t="Include" />
+        <e p="Junior_Full_Stack_Engineer_CV_-_Idan_Z גם בודק תוכנה.docx" t="Include" />
+        <e p="Junior_Software_Developer_CV_-_Dima_M.docx" t="Include" />
+        <e p="Junior_Software_Developer_CV_-_Elisheva_F.docx" t="Include" />
+        <e p="KonstantinRubinovCVHebrew קונסטנטין רובינוב  פולסטאק NET.docx" t="Include" />
+        <e p="Manual_QA_CV_-_Dimitri_H (1).docx" t="Include" />
+        <e p="Manual_QA_CV_-_Dimitri_H.docx" t="Include" />
+        <e p="Marketing_Specialist_Data_Analyst_CV_-_Orel_O.docx" t="Include" />
+        <e p="NET גל חייט  פול סטאק.docx" t="Include" />
+        <e p="R_Team_Leader_-_Pharma_CV_-_Itamar_B.docx" t="Include" />
+        <e p="Senior_Business_Finance_Analyst_CV_-_Marina_K.docx" t="Include" />
+        <e p="Software_Developer_CV_-_Roy_A.docx" t="Include" />
+        <e p="Software_Engineer_CV_-_Mor_M (1).docx" t="Include" />
+        <e p="Software_Engineer_CV_-_Mor_M.docx" t="Include" />
+        <e p="Software_Engineer_CV_-_Saar_M (1).docx" t="Include" />
+        <e p="Software_Engineer_CV_-_Saar_M.docx" t="Include" />
+        <e p="Tali Shay Yaish CV-2020.docx" t="Include" />
+        <e p="UX_Desinger_CV_-_Hanna_M.pdf" t="Include" />
+        <e p="__cv yizik 2020 apr  איציק מלכה פול סטאק.docx" t="Include" />
+        <e p="digger_1601382989_בן-ציון_אוקסוסמן.docx" t="Include" />
+        <e p="digger_1601808527_גדעון_סמיט.docx" t="Include" />
+        <e p="digger_1601833333_דורון_פרוסק.docx" t="Include" />
+        <e p="digger_1601841222_הלנה (1).pdf" t="Include" />
+        <e p="digger_1601846165_סימה_מרדכי.docx" t="Include" />
+        <e p="digger_1601849034_Kobi_Shemesh.docx" t="Include" />
+        <e p="digger_1601884103_ניסים_ברכה.docx" t="Include" />
+        <e p="digger_1601900903_ירון_משולם.pdf" t="Include" />
+        <e p="digger_1601919677_גיל_תורדקר_.docx" t="Include" />
+        <e p="digger_1601927244_אלינור_זאב.pdf" t="Include" />
+        <e p="digger_1601965970_פיליפ_ברקוביץ.docx" t="Include" />
+        <e p="digger_1601982645_בני_לוגסי.docx" t="Include" />
+        <e p="digger_1601987245_גל_סלומון.pdf" t="Include" />
+        <e p="digger_1601999786_חן_הוכשטט.pdf" t="Include" />
+        <e p="digger_1602054428_כפיר_צוקרמן.docx" t="Include" />
+        <e p="digger_1602056849_ניר_שבתאי (2).pdf" t="Include" />
+        <e p="digger_1602056849_ניר_שבתאי (3).pdf" t="Include" />
+        <e p="digger_1602069609_דניאל_בוטוליאנו.pdf" t="Include" />
+        <e p="digger_1602140214_דן_בונבידה.pdf" t="Include" />
+        <e p="digger_1602141428_פאר_שובל.docx" t="Include" />
+        <e p="digger_1602143739_בלאיש_פרנק.docx" t="Include" />
+        <e p="digger_1602152359_יקיר_מכלוף.pdf" t="Include" />
+        <e p="digger_1602182543_Vladimir_Kaminsky.docx" t="Include" />
+        <e p="digger_1602319690_אתי_מזרחי.docx" t="Include" />
+        <e p="digger_1602354242_ולדי_וסרמן.docx" t="Include" />
+        <e p="digger_1602396277_אנטולי.docx" t="Include" />
+        <e p="digger_1602429543_לירז_מירקין.docx" t="Include" />
+        <e p="digger_1602487904_שירי_וולף.docx" t="Include" />
+        <e p="digger_1602489627_אורן_רהב.docx" t="Include" />
+        <e p="digger_1602498878_אירית_נגר.docx" t="Include" />
+        <e p="digger_1602588157_לירן_מנצור.docx" t="Include" />
+        <e p="digger_1602588480_איגור_גולדשטיין_.docx" t="Include" />
+        <e p="digger_1602662841_שרון_שחר.docx" t="Include" />
+        <e p="digger_1602677201_שי_אשתמקר.docx" t="Include" />
+        <e p="digger_1602678535_אלון_ינקלביץ (2).pdf" t="Include" />
+        <e p="digger_1602678535_אלון_ינקלביץ.pdf" t="Include" />
+        <e p="digger_1602684572_מעיין_פאר.docx" t="Include" />
+        <e p="digger_1602758158_עופרי_כורכוס.pdf" t="Include" />
+        <e p="digger_1602760979_רבקה_צימרמן.docx" t="Include" />
+        <e p="digger_1603015130_מקסים_גונצ׳רוב (2).pdf" t="Include" />
+        <e p="digger_1603021365_אירינה_קורמן.pdf" t="Include" />
+        <e p="digger_1603040774_עינבל_קוריה.docx" t="Include" />
+        <e p="digger_1603087643_יובל_שטרול (1).pdf" t="Include" />
+        <e p="digger_1603092481_אהרון_עמרם.pdf" t="Include" />
+        <e p="digger_1603097741_שמואל_יוחאי.docx" t="Include" />
+        <e p="digger_1603110945_ביתיה_נעמן.docx" t="Include" />
+        <e p="digger_1603117798_מריאן (1).docx" t="Include" />
+        <e p="digger_1603117798_מריאן.docx" t="Include" />
+        <e p="digger_1603126288_טלי_רבינוביץ.docx" t="Include" />
+        <e p="digger_1603138436_אלירן_מנשה.pdf" t="Include" />
+        <e p="digger_1603219116_שאול_יהודה.docx" t="Include" />
+        <e p="digger_1603276521_רונן_רבייב.docx" t="Include" />
+        <e p="digger_1603303612_קרן_פרי.docx" t="Include" />
+        <e p="digger_1603311841_מתן_אדלמן (1).pdf" t="Include" />
+        <e p="digger_1603456986_עמיר_סיון.docx" t="Include" />
+        <e p="digger_1603464397_כרמית_שמאי_.pdf" t="Include" />
+        <e p="digger_1603551484_מרינה_אייזלמן.docx" t="Include" />
+        <e p="digger_1603606137_אהוד_פינברג.docx" t="Include" />
+        <e p="digger_1603693544_מוטי_לוי.docx" t="Include" />
+        <e p="digger_1603728749_ירדן_שמש.pdf" t="Include" />
+        <e p="digger_1603790175_Benny_Shtatman.docx" t="Include" />
+        <e p="digger_1603794938_ענבל_כהן.docx" t="Include" />
+        <e p="digger_1603805506_שיר_גרוס.docx" t="Include" />
+        <e p="digger_1603867054_כפיר_בנעים.docx" t="Include" />
+        <e p="digger_1603876598_דינה_ברנדל-אייזיק.pdf" t="Include" />
+        <e p="digger_1603885124_ליחי_סוריאנו_.docx" t="Include" />
+        <e p="digger_1603976295_יהודה_סאעת.docx" t="Include" />
+        <e p="digger_1604040403_אושרה_כהן.docx" t="Include" />
+        <e p="digger_1604078473_שי_ממן.docx" t="Include" />
+        <e p="digger_1604086717_מורן_אוחיון.docx" t="Include" />
+        <e p="digger_1604131255_אופיר_רימבוים (1).pdf" t="Include" />
+        <e p="digger_1604139933_נורית_קופרברג.pdf" t="Include" />
+        <e p="digger_1604239415_תמיר_עטיה.docx" t="Include" />
+        <e p="digger_1604243159_Azita_Smilansky.docx" t="Include" />
+        <e p="digger_1604254237_יעל_בר.docx" t="Include" />
+        <e p="digger_1604262547_פנחס_ביטון.docx" t="Include" />
+        <e p="digger_1604300302_ירדנה_אהרן.docx" t="Include" />
+        <e p="digger_1604303187_ולרי_לונגו.docx" t="Include" />
+        <e p="digger_1604326088_סבג_סיגל_.pdf" t="Include" />
+        <e p="digger_1604337748_רוני.pdf" t="Include" />
+        <e p="digger_1604346497_אמיר_מדינה.pdf" t="Include" />
+        <e p="digger_1604393157_סימה_טוחמאי.docx" t="Include" />
+        <e p="digger_1604399015_טל_גרינזייד.docx" t="Include" />
+        <e p="digger_1604402216_עקיבא_דוידוב.docx" t="Include" />
+        <e p="digger_1604402847_שרה_אדלשטיין.docx" t="Include" />
+        <e p="digger_1604411246_יפעת_זר.docx" t="Include" />
+        <e p="digger_1604435526_David.docx" t="Include" />
+        <e p="digger_1604588342_ישי_אור-זך.docx" t="Include" />
+        <e p="digger_1604592927_איציק_גולסטני.pdf" t="Include" />
+        <e p="digger_1604665562_Galia_Parvari     מנהלת משרד.docx" t="Include" />
+        <e p="digger_1604665562_Galia_Parvari.docx" t="Include" />
+        <e p="digger_1604744466_חיים_זינו_ מחסנאי.pdf" t="Include" />
+        <e p="digger_1604774511_משה_גרין   מנהל פרויקטים בתחום המחשוב.pdf" t="Include" />
+        <e p="digger_1604779978_צוריאל_בן_דוד  עובד כללי.pdf" t="Include" />
+        <e p="digger_1604852447_נטע_רינדנאו system.pdf" t="Include" />
+        <e p="digger_1604854183_חגית_לייבה  מנהלת חשבונות.docx" t="Include" />
+        <e p="digger_1604937535_סימה_מרדכי  מפעיל מכונות.docx" t="Include" />
+        <e p="resume kobi.docx עדכנימהנדס חשמל.pdf" t="Include" />
+        <e p="אבי לארי מעצב פנים ושרטט  חולון.pdf" t="Include" />
+        <e p="אביבה אהרוני מנהלת חשבונות ירושלים.docx" t="Include" />
+        <e p="אביגיל ניסים מנהלת חשבונות וחשבת שכר ירושלים.pdf" t="Include" />
+        <e p="אביטל אוחיון מנהלת חשבונות חשב שכר ירושלים.docx" t="Include" />
+        <e p="אבייב קמילה מנהלת חשבונות חשבת שכר נתניה.docx" t="Include" />
+        <e p="אברהם כהן הנדסאי אלקטרוניקה.pdf" t="Include" />
+        <e p="אדוארד נודלמן מנהל חשבונות וחשב שכר חיפה.doc" t="Include" />
+        <e p="אווה בנימין חשבת שכר ומנהל חשבונות קרית חיים.docx" t="Include" />
+        <e p="אוסבצב טניה מנהל חשבונות וחשבת שכר.docx" t="Include" />
+        <e p="אורטל לוי ניהול אדמניסטרטיבי נתיבות.docx" t="Include" />
+        <e p="אורי דר מתכנן מכני.pdf" t="Include" />
+        <e p="אורית חזיז מנהלת חשבונות אשדוד.docx" t="Include" />
+        <e p="אורית ישראלי מנהלת רכש  חיפה.docx" t="Include" />
+        <e p="אורית מרקוביץ מזכירה תל אביב.docx" t="Include" />
+        <e p="אורלי מוצניק מעצבת פנים והנדסאית אדריכלות אלפי מנשה.pdf" t="Include" />
+        <e p="אורלי קרקו מנהלת חשבונות וחשבת שכר נתניה חצי משרה.docx" t="Include" />
+        <e p="אורנה קרבס חשבת שכר כפר סבא.docx" t="Include" />
+        <e p="איברהים אבו אחמד המדסאי אדריכלות ועיצוב פנים שרטט נצרת.docx" t="Include" />
+        <e p="איזבלה וינצקי מנהלת חשבונות וחשבת שכר חיפה.docx" t="Include" />
+        <e p="אילן שמש מיישם SAP.docx" t="Include" />
+        <e p="אינה שטשוילי מנהלת חשבונות וחשבת שכר כרמיאל.docx" t="Include" />
+        <e p="אירינה בן אברהם מנהלת חשבונות בת ים.docx" t="Include" />
+        <e p="איריס כהן מנהלת לשכה.pdf" t="Include" />
+        <e p="איתמר כהן.docx" t="Include" />
+        <e p="אלה פלוטניק מנהלת חשבונות ירושלים.docx" t="Include" />
+        <e p="אלון טל פול סטאק.docx" t="Include" />
+        <e p="אלון טל פול סטאק.pdf" t="Include" />
+        <e p="אלחורי עינאד יועץ מס ומנהל חשבונות וחשב שכר מושב מגאר.docx" t="Include" />
+        <e p="אליאור אדריאן - קו''ח - 8.11  הנדסאי אדריכלות נוף.pdf" t="Include" />
+        <e p="אליסיה ברונשטיין מנהלת חשבונות אילת.docx" t="Include" />
+        <e p="אלכסנדר בזיק הנדסאי תחבורה.docx" t="Include" />
+        <e p="אלכסנדר בזיק מהנדס דרכים.odt" t="Include" />
+        <e p="אלכסנדר ניסנבאום הנדסאי מכשור ובקרה אשקלון.docx" t="Include" />
+        <e p="אלמוג עמוס פול סטאק.docx" t="Include" />
+        <e p="אמי אמסלם חשבת שכר מודיעין.docx" t="Include" />
+        <e p="אמיר גל מכשירן חשמלאי מוסמך רחובות.docx" t="Include" />
+        <e p="אמיר רומנובסקי - קורות חיים  מכירות.pdf" t="Include" />
+        <e p="אנגליקה חיימוב מנהלת חשבונות וחשבת שכר.pdf" t="Include" />
+        <e p="אסתר בן סימון מנהלת חשבונות ירושלים.docx" t="Include" />
+        <e p="אפק סף מתכנן מכני.pdf" t="Include" />
+        <e p="אפרת בר עיצוב פניםמתאמת שינויי דיור קרית מוצקין.docx" t="Include" />
+        <e p="אפרת עזרא יועצת מס.pdf" t="Include" />
+        <e p="אריה רוזנבלום מנהל חשבונות וחשב שכר.docx" t="Include" />
+        <e p="אריה שניידרמן בדיקות סופיות.docx" t="Include" />
+        <e p="ארתור גברילוב מהנדס מכונות רמלה.pdf" t="Include" />
+        <e p="אתי בורנשטיין מנהלת חשבונות וחשבת שכר נהריה.docx" t="Include" />
+        <e p="אתי בורנשטיין מנהלת חשבונות מדופלמת.pdf" t="Include" />
+        <e p="אתי הסNET.docx" t="Include" />
+        <e p="אתי כהן מנהלת חשבונות וחשבת שכר ראש העין.docx" t="Include" />
+        <e p="בוסירה יעקוב.docx" t="Include" />
+        <e p="בני לוגסי מנהל רשתות ומחשוב בצפון.docx" t="Include" />
+        <e p="בני שטטמן 052.docx" t="Include" />
+        <e p="בניפלח סוכן מכירות.docx" t="Include" />
+        <e p="בר בן שלום ראש צוות פיתוח תוכנה.docx" t="Include" />
+        <e p="בר לוי  מנהלת משרד.pdf" t="Include" />
+        <e p="ברוריה משה מנהלת חשבונות וחשבת שכר ירושלים.pdf" t="Include" />
+        <e p="ברסלבסקי ילנה מהנדסת בניין פינוי בינוי.pdf" t="Include" />
+        <e p="ברסקי סופיה מנהלת חשבונות וחשבת שכר מגדל העמק.docx" t="Include" />
+        <e p="ברקוביץ אסרף מאיה רמת גן.pdf" t="Include" />
+        <e p="בת אל ואתורי מנהלת חשבונות מדופלמת וחשבת שכר יבנה.docx" t="Include" />
+        <e p="גלעד מורדכוביץ פול סטאק   בני ברק.pdf" t="Include" />
+        <e p="גלעד שוורצוורט חשב שכר קיבוץ לביא.docx" t="Include" />
+        <e p="דוד דהן מנהל חשבונות אשדוד.docx" t="Include" />
+        <e p="דומיניק ליברמן devopps.docx" t="Include" />
+        <e p="דותן דסאו מנהל פרויקטים תעשיה וניהול.docx" t="Include" />
+        <e p="דימה מינץ.docx" t="Include" />
+        <e p="דליה קרני חשבת שכר פתח תקוה.pdf" t="Include" />
+        <e p="דנה איטלמן מנהלת חשבונות הוד השרון.docx" t="Include" />
+        <e p="דנה לגזיאל מנהל מוצר פרודוקט מנגר.docx" t="Include" />
+        <e p="דפנה עובדיה מנהלת חשבונות חיפה.docx" t="Include" />
+        <e p="דפנה קמרט מנהלת משרד.pdf" t="Include" />
+        <e p="דקלה מנהלת משרד.docx" t="Include" />
+        <e p="דרור כהן חשמלאי ראשי נהריה.docx" t="Include" />
+        <e p="דרורית בר סימן טוב מנהלת חשבונות  רמלה.docx" t="Include" />
+        <e p="הדס פישר מכירות מנהלת מוקד תל אביב.pdf" t="Include" />
+        <e p="הדר רון ממונה בטיחות בבניה וחקלאות.docx" t="Include" />
+        <e p="הדר רון ממונה בטיחות וגיהות מנהל עסקים תואר שני.docx" t="Include" />
+        <e p="הילה קל.docx" t="Include" />
+        <e p="הלן שעשוע פול סטאק בני ברק.docx" t="Include" />
+        <e p="הלפר יניב מנהל עבודה ראשון לציון.pdf" t="Include" />
+        <e p="הנדסאי חשמל חשמלאי ראשי  מאור פרש.docx" t="Include" />
+        <e p="ויטלי טקץ מנהל חשבונות קריית ביאליק.docx" t="Include" />
+        <e p="ויסקובסקי מאיה מנהלת חשבונות וחשבת שכר רחובות.docx" t="Include" />
+        <e p="זאב פרל מכשירן.docx" t="Include" />
+        <e p="זאב שמואל מכירות שטח.docx" t="Include" />
+        <e p="זיוה בן שטרית מנהלת חשבונות וחשבת שכר.docx" t="Include" />
+        <e p="חוסם אבו סאלח מנהל עבודה סכנין.docx" t="Include" />
+        <e p="חי ייני הנדסאי מכונות.docx" t="Include" />
+        <e p="חכמון יהודית מנהל חשבונות חולון.pdf" t="Include" />
+        <e p="חן הוכשטט כלכלן חיפה.pdf" t="Include" />
+        <e p="חנה וקנין מנהלת חשבונות וחשבת שכר ביתר עילית.docx" t="Include" />
+        <e p="טוני עגיב פקידה.docx" t="Include" />
+        <e p="טטיאנה טיחונוב מנהלת חשבונות וחשבת שכר השרון.docx" t="Include" />
+        <e p="טל סול מלול מנהלת חשבונות וחשבת שכר.pdf" t="Include" />
+        <e p="יאמן הזימה מהנדס מכונות מתכנן מכני כפר ערבי.pdf" t="Include" />
+        <e p="יהודה שאול.docx" t="Include" />
+        <e p="יובל איפרח הנדסאית אדריכלות ועיצוב פנים מתאמת שינויי דיירים מושב זרועה.docx" t="Include" />
+        <e p="יובל פישביין מעצב פנים ושרטט תל אביב.docx" t="Include" />
+        <e p="יוחנן אלוש מנהל חשבונות וחשב שכר ירושלים.docx" t="Include" />
+        <e p="יוכי לייטנר חשבת שכר תל אביב.pdf" t="Include" />
+        <e p="יוליאנה מזרחי חשבת שכר תל אביב.docx" t="Include" />
+        <e p="יונה תירם מנהלת חשבונות וחשב שכר.docx" t="Include" />
+        <e p="יונתנוב רגינה מנהלת חשבונות וחשבת שכר.docx" t="Include" />
+        <e p="יוסף ביטון ממונה בטיחות.docx" t="Include" />
+        <e p="יחיאל דנה מנהל חשבונות וחשבת שכר ראש העין.docx" t="Include" />
+        <e p="יעל יוסף חשבת שכר רעננה.docx" t="Include" />
+        <e p="יעקוב צביאגין פול סטאק.docx" t="Include" />
+        <e p="יפעת ורדי מנהלת חשבונות קדימה.docx" t="Include" />
+        <e p="יצחק מזין קורות חיים 05  מחסנאי ממוחשב.docx" t="Include" />
+        <e p="ירון גרינגארט מנהל חשבונות וחשב שכר רמת גן.docx" t="Include" />
+        <e p="כפיר צוקרמן.docx" t="Include" />
+        <e p="כרמית הרץ מנהלת חשבונות וחשבת שכר מודיעין.docx" t="Include" />
+        <e p="לודמילה קסלסי מנהלת חשבונות וחשב שכר ירושלים.docx" t="Include" />
+        <e p="ליאור מידן חשבת שכר רחובות.docx" t="Include" />
+        <e p="ליאת ליבר אלבוים מנהלת חשבונות וחשבת שכר כרמיאל.docx" t="Include" />
+        <e p="לימור זה עידן משאבי אנוש חולון.docx" t="Include" />
+        <e p="לישי אסרף פול סטאק  angular.pdf" t="Include" />
+        <e p="מאור פרש הנדסאי חשמל.docx" t="Include" />
+        <e p="מאי כהן שירות לקוחות.docx" t="Include" />
+        <e p="מאיר אלדר מנהל חשבונות פתח תקווה.docx" t="Include" />
+        <e p="מאיר מלכה מנהל עבודה אחזקה אשקלון.pdf" t="Include" />
+        <e p="מאירה בר חשבת שכר רנת ישי.docx" t="Include" />
+        <e p="מארי גסמן מקדמת שיווק חולון.docx" t="Include" />
+        <e p="מוחמד זועבי-קורות חיים-אוקטובר 2020  הנדסאי חשמל בית חכם.docx" t="Include" />
+        <e p="מוטי ואזנה מנהל חשבונות תל אביב.docx" t="Include" />
+        <e p="מורן עשור חשבת שכר אורנית.docx" t="Include" />
+        <e p="מורן פרש מנתחת מערכות ומנהלת פרויקטים.docx" t="Include" />
+        <e p="מיה אלבז מעצבת פנים UI ו UX שרטטת.pdf" t="Include" />
+        <e p="מיטל עבודי חשבת שכר אשקלון.docx" t="Include" />
+        <e p="מיכאל עמר מסגר רתך ומכונאי אחזקה קריית גת.docx" t="Include" />
+        <e p="מינדל גולדבלט מנהלת חשבונות וחשבת שכר ירושלים.docx" t="Include" />
+        <e p="מינה הירשברגר מנהלת חשבונות וחשבת שכר.pdf" t="Include" />
+        <e p="מירב בירן.docx" t="Include" />
+        <e p="מירב נוח מנהלת חשבונות וחשבת שכר נהריה.docx" t="Include" />
+        <e p="מירב פרץ כהן מנהלת חשבונות וחשבת שכר מושב אביעזר.docx" t="Include" />
+        <e p="מירי חן חשבת שכר ומנהלת חשבונת  תל אביב.docx" t="Include" />
+        <e p="מירי חן מנהלת חשבונות וחשבת שכר כפר חבד.pdf" t="Include" />
+        <e p="מירי יקותיאלי מנהלת חשבונות וחשבת שכר.docx" t="Include" />
+        <e p="ממונה בטיחות נתנאל יסחקוב.pdf" t="Include" />
+        <e p="מנהל מכירות דניאל ציוני.docx" t="Include" />
+        <e p="מנהלת חשבונות אשקלון.docx" t="Include" />
+        <e p="מעיין פאר.docx" t="Include" />
+        <e p="מרדכי רבוח.docx" t="Include" />
+        <e p="מרים לוי אברהמי עיצוב פנים.pdf" t="Include" />
+        <e p="מרינה וינשטוק פול סטאק גוניור תל אביב.docx" t="Include" />
+        <e p="מתן מזל תרים הנדסאי אדריכלות ועיצוב פנים  שרטט רמת גן.pdf" t="Include" />
+        <e p="נועם קטן מכירות.docx" t="Include" />
+        <e p="נורית נקש פרויקטורית בגזברות.docx" t="Include" />
+        <e p="נחמה ויסברג מנהלת חשבונות חשב שכר גבעת זאב.pdf" t="Include" />
+        <e p="נטי בן משה מנהלת חשבונות רעננה.docx" t="Include" />
+        <e p="ניב יהב מהנדס חשמל ןפיתו אלגוריתמים.docx" t="Include" />
+        <e p="ניב רוסו מעצבת פנים.pdf" t="Include" />
+        <e p="נלי קפוב קגן אדריכלות ועיצוב פנים פרדסיה.pdf" t="Include" />
+        <e p="נתניה גלית צור הנדסאית אדריכלות.pdf" t="Include" />
+        <e p="נתניה קרן כהן מנהלת חשבונות וחשבת שכר.docx" t="Include" />
+        <e p="סאמר עוואד מנהל חשבונות וחשב שכר נצרת.docx" t="Include" />
+        <e p="סבטלנה וקסמן מנהלת חשבונות וחשבת שכר חיפה.docx" t="Include" />
+        <e p="סוהיר אמארה מנהלת חשבונות מעלה עירון.docx" t="Include" />
+        <e p="סימה ישראל מנהלת חשבונות בת ים.docx" t="Include" />
+        <e p="סימה מרדכי הנדסאית מכונות.docx" t="Include" />
+        <e p="סמיר נשף מנהעבודה בבניין וחשמלאי מוסמך.docx" t="Include" />
+        <e p="סנדרה ארליך מנהלת חשבונות לוד.docx" t="Include" />
+        <e p="ספחא פחראלדין הנדסאי קירור ומיזוג חיפה.docx" t="Include" />
+        <e p="סקוברב אנדרי ראש צוו פיתוח תוכנה.pdf" t="Include" />
+        <e p="עדי אברמסון  DevOps.docx" t="Include" />
+        <e p="עדנה שגב רוט מנהלת חשבונות וחשבת שכר באר שבע.docx" t="Include" />
+        <e p="עובדיה טוב מנהל חשבונות וחשב שכר תל אביב.docx" t="Include" />
+        <e p="עוז לוי תמחירן וחשב שכר קיבוץ חמדיה.docx" t="Include" />
+        <e p="עוזרת מנכל כפר יונה לירון אסא.docx" t="Include" />
+        <e p="עומר חזן אנליסט.docx" t="Include" />
+        <e p="עזרא אלדר חשב שכר קרית אונו.docx" t="Include" />
+        <e p="עינבל קוריה.docx" t="Include" />
+        <e p="עינת חי מנהלת חשבונות אליכין.docx" t="Include" />
+        <e p="עכו תחשין חאג' הנדסאי בניין מנהל עבודה  ממונה בטיחות.pdf" t="Include" />
+        <e p="עמר מיכאל מסגר.docx" t="Include" />
+        <e p="עפרה אנביוב מנהל חשבת שכר בני ברק.docx" t="Include" />
+        <e p="פאדי גנאים הנדסאי אזרחי שרטט.pdf" t="Include" />
+        <e p="פנינה אברה מנהלת חשבונות וחשבת שכר חולון.docx" t="Include" />
+        <e p="פקס פנינה מנהלת חשבונות וחשבת שכר.docx" t="Include" />
+        <e p="צבי שרווד אחזקת מבנים.pdf" t="Include" />
+        <e p="ציון בשם מיכאל עמר מסגר.txt" t="Include" />
+        <e p="ציפורה טובול פול סטאק הנדסאית תוכנה.pdf" t="Include" />
+        <e p="ק.חיים 2020 מאור.docx" t="Include" />
+        <e p="קאמל אבו חמדה חשמלאי אחזקה.pdf" t="Include" />
+        <e p="קובי בשירי מנהל שיווק ומכירות מוצר.docx" t="Include" />
+        <e p="קוח יואב לבקוביץ.  רכש לוגיסטיקה.docx" t="Include" />
+        <e p="קורות חיים  יצחק חרזי  מסגר.docx" t="Include" />
+        <e p="קורות חיים - אביתר בן לולו.docx" t="Include" />
+        <e p="קורות חיים - יוחאי.docx" t="Include" />
+        <e p="קורות חיים -דן כראדי 2020  ממונה בטיחות.docx" t="Include" />
+        <e p="קורות חיים אלון 2020 (1) (2).pdf" t="Include" />
+        <e p="קורות חיים אלון 2020 (1).pdf" t="Include" />
+        <e p="קורות חיים אלון 2020.pdf" t="Include" />
+        <e p="קורות חיים אריאל גיל (1) מהנדס מכונות.pdf" t="Include" />
+        <e p="קורות חיים דנה עמוס  מתאמת מכירות טלמיטינג.docx" t="Include" />
+        <e p="קורות חיים זוהר אלמן תנ (1).docx" t="Include" />
+        <e p="קורות חיים טל 2020  טל מיזרחי שירות לקוחות.docx" t="Include" />
+        <e p="קורות חיים ליאת פסיכולוגיה וקרימונולוגיה.docx" t="Include" />
+        <e p="קורות חיים מושקי שיינר.docx" t="Include" />
+        <e p="קורות חיים מעודכנים - Dana Cohen Levi.docx" t="Include" />
+        <e p="קורות חיים סמיר נעמה-3.docx" t="Include" />
+        <e p="קורות חיים עודד 2  עודד כהן מוכר בחנות.docx" t="Include" />
+        <e p="קורות חיים קובי יהודה מעודכן 2020.pdf" t="Include" />
+        <e p="קורות חיים רויטל (אלי תוספת ).docx" t="Include" />
+        <e p="קורות חיים רותם תומר  מנהלת חשבונות.pdf" t="Include" />
+        <e p="קורות חיים-יעקב.docx" t="Include" />
+        <e p="קורות-חיים-חני-אמסלם.pdf" t="Include" />
+        <e p="קורת חיים עלא אלעורגאן 91.docx" t="Include" />
+        <e p="קטי פולק שירות לקוחות והזמנות רכש אשדוד.docx" t="Include" />
+        <e p="קטרינה דונצקו מנהלת חשבונות וחשבת שכר כלכלנית נתניה.docx" t="Include" />
+        <e p="קלכמן דניאל מנהל חשבונות וחשב שכר קריית ביאליק.docx" t="Include" />
+        <e p="קלנטרוב דמיטרי  java web   פול סטאק.docx" t="Include" />
+        <e p="קמי ציוני גולדשטיין מנהלת חשבונות רמלה.docx" t="Include" />
+        <e p="קרן הוד מהנדסת תעשיה וניהול הוד השרון.docx" t="Include" />
+        <e p="קרן מנדל מנהלת חשבונות יבנאל.pdf" t="Include" />
+        <e p="רבקה חלפון מעצבת פנים.docx" t="Include" />
+        <e p="רואד אטוה 11מנהל פרויקט הנדסה כימית.docx" t="Include" />
+        <e p="רוזי כהן  מכירות.docx" t="Include" />
+        <e p="רויטל מונטה מנהל חשבונות וחשבת שכר ירושלין.docx" t="Include" />
+        <e p="רוני פוקס הנדסאי אדריכלות.docx" t="Include" />
+        <e p="רונית גפני מנהלת חשבונות וחשבת שכר רמת גן.docx" t="Include" />
+        <e p="רוקח ציפי מנהל חשבונות וחשבת שכר ניצן.docx" t="Include" />
+        <e p="רז רובין הנדסאי אדריכלות ועיצוב.docx" t="Include" />
+        <e p="רחל טרשי מנהלת חשבונות פתח תקוה.docx" t="Include" />
+        <e p="רחל פלח מנהלת חשבונות וחשבת שכר רמת ישי.docx" t="Include" />
+        <e p="רחלי איתן מנהלת חשבונות וחשבת שכר רמת גן.docx" t="Include" />
+        <e p="רמי בנבנישטי מנהל חשבונות וחשב שכר נווה זיו.docx" t="Include" />
+        <e p="שגית אלחדס מנהלת חשבונות וחשבת שכר כרמיאל.docx" t="Include" />
+        <e p="שהי שלם מעצבת פנים.pdf" t="Include" />
+        <e p="שומרון קורות חיים רותם תומר  מנהלת חשבונות.pdf" t="Include" />
+        <e p="שושי סאיר מנהלת חשבונות וחשבת שכר.pdf" t="Include" />
+        <e p="שי אייסהאוור פול סטאק.docx" t="Include" />
+        <e p="שירות לקוחות ומכירות שרה גריידי.docx" t="Include" />
+        <e p="שירות לקוחות טלמיטינג דורון_פרוסק.docx" t="Include" />
+        <e p="שירי וולף.docx" t="Include" />
+        <e p="שלומית פורטי שירות לקוחות כפר סבא.docx" t="Include" />
+        <e p="שלי פרי פקידת ביטוח.docx" t="Include" />
+        <e p="שמיר יוסי מנהל חשבונות וחשב שכר גבעתיים.docx" t="Include" />
+        <e p="שמיר יוסי מנהל חשבונות חשב שכר גבעתיים.docx" t="Include" />
+        <e p="שני דנקנר מעצבת גרפית.docx" t="Include" />
+        <e p="שני ונונו מנהלת משרד.docx" t="Include" />
+        <e p="שרה אליאס מנהלת חשבונות נתניה.docx" t="Include" />
+        <e p="שרה וידר מנהלת חשבונות וחשבת שכר ירושלים.pdf" t="Include" />
+        <e p="שרה רייך הנדאית אדריכלות ועיצוב פנים פתח תקוה.pdf" t="Include" />
+        <e p="שרטט  AUTOCAD  תל אבי הנדסאי 2020 -1  יובל פישביין.pdf" t="Include" />
+        <e p="שרטט  AUTOCAD הנדסאי 2020 -1יובל פישבן תל אביב.pdf" t="Include" />
+        <e p="שרי כהן מנהלת חשבונות וחשבת שכר בני ברק.docx" t="Include" />
+        <e p="תהילה לביוב הנדסאית אדריכלות ועיצוב פנים שרטטת.pdf" t="Include" />
+        <e p="תהילה פיינגולד מנהלת חשבונות וחשבת שכר בית שמש.docx" t="Include" />
+        <e p="תום איליי גובט - קורות חיים  הנדסאי מכונות אנרגיה גז.pdf" t="Include" />
+        <e p="תמיר גבע מהנדס תעשיה וניהול אנליסט מתחיל צורן.docx" t="Include" />
+        <e p="תמרה רייכמן מנהלת חשבונות חיפה.docx" t="Include" />
+      </e>
+      <e p="my-new-app.csproj" t="IncludeRecursive" />
+      <e p="obj" t="ExcludeRecursive">
+        <e p="Debug" t="Include">
+          <e p="netcoreapp3.1" t="Include">
+            <e p="my-new-app.AssemblyInfo.cs" t="Include" />
+            <e p="my-new-app.RazorAssemblyInfo.cs" t="Include" />
+          </e>
+        </e>
+      </e>
+      <e p="packages" t="ExcludeRecursive" />
+      <e p="wwwroot" t="Include">
+        <e p="favicon.ico" t="Include" />
+      </e>
+    </e>
+  </component>
+</project>
