@@ -13,6 +13,7 @@ import {CommonModule} from "@angular/common";
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import {MatSlideToggleModule} from '@angular/material/slide-toggle';
 import {MatSliderModule} from "@angular/material/slider";
+import {MatRadioModule} from '@angular/material/radio';
 
 @NgModule({
   declarations: [
@@ -23,6 +24,7 @@ import {MatSliderModule} from "@angular/material/slider";
     FetchDataComponent
   ],
   imports: [
+    MatRadioModule,
     MatSlideToggleModule,
     [CommonModule],
     BrowserModule.withServerTransition({appId: 'ng-cli-universal'}),

@@ -13,7 +13,10 @@ namespace HR.Searcher
         {
             var bytes = File.ReadAllBytes(fileName);
             var text = ConvertToText(bytes);
-            return text;
+
+            if (text.IsHebrew())
+                text = text.ReverseText();
+                return text;
         }
         
 

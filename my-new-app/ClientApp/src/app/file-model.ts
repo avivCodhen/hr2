@@ -4,4 +4,6 @@ export class FileModel{
   score: number;
   words: string[];
   city: string;
+  creationTime: Date;
+
 }

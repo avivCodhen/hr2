@@ -7,7 +7,8 @@ namespace HR.Searcher
         public string OpenFile(string fileName)
         {
             Application app = new Application();
-            Document doc = app.Documents.Open(fileName);
+            app.DisplayAlerts = WdAlertLevel.wdAlertsNone;
+            Document doc = app.Documents.Open(fileName, ReadOnly:true);
 
             //Get all words
             string allWords = doc.Content.Text;

@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections.Concurrent;
 using System.Collections.Generic;
 using System.Diagnostics;
 using System.IO;
@@ -45,32 +46,26 @@ namespace HR.Controllers
             {
                 if (string.IsNullOrEmpty(textModel.Text)) return BadRequest();
 
-                var texts = textModel.Text.Split(" ");
+                var searchPrhases = textModel.Text.Split(" ").ToList();
                 Console.WriteLine(Environment.CurrentDirectory);
 
                 var model = new SearchModel();
+                var fileModels = new ConcurrentDictionary<string, FileModel>();
                 var files = FilesRepo.Files.ToList();
+
                 foreach (var file in files)
                 {
-                    try
-                    {
-                        if (file.Value.IsCorrupt) throw new Exception();
-                        var results = _searchService.GetResults(file.Value.Words, file.Key, texts, textModel.Precision);
-
-                        if (results != null)
-                        {
-                            results.City = file.Value.City;
-                            model.Files.Add(results);
-                        }
-                    }
-                    catch (Exception e)
-                    {
-                        model.CorruptFiles.Add(new FileModel() {Name = Path.GetFileName(file.Key), Path = file.Key});
-                        Console.WriteLine($"File: {file} has error: {e.Message}");
-                    }
+                    var fileModel = GetFileData(textModel.Precision, file, searchPrhases);
+                    if (fileModel != null) fileModels[file.Key] = fileModel;
                 }
 
-                model.Files = model.Files.OrderByDescending(x => x.Words.Count()).ToList();
+                model.CorruptFiles = fileModels.Where(x => x.Value.IsCorrupt).Select(x => x.Value).ToList();
+                model.Files = fileModels.Where(x => !x.Value.IsCorrupt).Select(x => x.Value).ToList();
+                if (textModel.SortBy == "results")
+                    model.Files = model.Files.OrderByDescending(x => x.Score).ToList();
+                else
+                    model.Files = model.Files.OrderByDescending(x => x.CreationTime).ToList();
+
                 return Ok(model);
             }
             catch (Exception e)
@@ -78,6 +73,22 @@ namespace HR.Controllers
                 Console.WriteLine(e.Message);
                 return BadRequest(e.Message);
             }
+        }
+
+        private FileModel GetFileData(int precision, KeyValuePair<string, OpenedFile> file, List<string> searchPrhases)
+        {
+            var fileModel = new FileModel()
+                {Name = Path.GetFileName(file.Key), Path = file.Key, IsCorrupt = file.Value.IsCorrupt};
+            if (fileModel.IsCorrupt)
+            {
+                Console.WriteLine($"File: {file} has error");
+                return fileModel;
+            }
+
+            var results = _searchService.GetResults(file.Value,
+                searchPrhases, precision);
+
+            return results;
         }
     }
 }

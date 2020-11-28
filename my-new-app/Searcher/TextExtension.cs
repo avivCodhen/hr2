@@ -1,20 +1,16 @@
-﻿﻿using System;
+﻿using System;
 using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
+using System.Text;
 
 namespace HR.Searcher
 {
     public static class TextExtension
     {
-        public static string ReverseSearchText(this string text)
-        {
-            return Reverse(text);
-        }
-
         public static bool IsHebrew(this string value)
         {
-            return System.Text.RegularExpressions.Regex.IsMatch(value, @"^[א-ת]+$");
+            return !System.Text.RegularExpressions.Regex.IsMatch(value, @"^[A-Z]+$");
         }
 
         public static string Reverse(this string s)
@@ -31,7 +27,8 @@ namespace HR.Searcher
                 .Replace("\r", String.Empty)
                 .Replace(",", String.Empty)
                 .Replace(":", String.Empty)
-                .Split(" ").Select(x => x.Trim()).ToList();
+                .Split(" ").Select(x => x.Trim())
+                .Where(x => !string.IsNullOrEmpty(x)).ToList();
         }
 
         public static int Distance(this string source1, string source2)
@@ -51,8 +48,13 @@ namespace HR.Searcher
                 return source1Length;
 
             // Initialization of matrix with row size source1Length and columns size source2Length
-            for (var i = 0; i <= source1Length; matrix[i, 0] = i++){}
-            for (var j = 0; j <= source2Length; matrix[0, j] = j++){}
+            for (var i = 0; i <= source1Length; matrix[i, 0] = i++)
+            {
+            }
+
+            for (var j = 0; j <= source2Length; matrix[0, j] = j++)
+            {
+            }
 
             // Calculate rows and collumns distances
             for (var i = 1; i <= source1Length; i++)
@@ -66,21 +68,39 @@ namespace HR.Searcher
                         matrix[i - 1, j - 1] + cost);
                 }
             }
+
             // return result
             return matrix[source1Length, source2Length];
         }
-        
-        public static bool TextDistance(this IEnumerable<string> strs, string[] texts, int threshold)
+
+        public static IEnumerable<string> Phrases(this IEnumerable<string> source)
         {
-            foreach (var text in texts)
+            var phrases = new List<string>();
+            for (int i = 0; i < source.Count(); i++)
             {
-                foreach (var str in strs)
+                var sb = new StringBuilder();
+                var leftOvers = source.Skip(i).ToList();
+                for (int j = 0; j < leftOvers.Count(); j++)
                 {
-                    if (str.Distance(text) <= threshold) return true;
+                    var space = (j == leftOvers.Count() - 1) ? "" : " ";
+                    sb.Append(leftOvers[j] + space);
+                    if (j != 0)
+                        phrases.Add(sb.ToString());
                 }
             }
 
-            return false;
+            return phrases;
+        }
+
+        public static string ReverseText(this string text)
+        {
+            var s = string.Join(" ", text).Split(" ").Select(x => new string(x.IsHebrew() ? x.Reverse() : x)).ToList();
+            return string.Join(" ", s);
+        }
+
+        public static bool HebrewSexDistance(this string value, string value2, int precision)
+        {
+            return new[] {"ה", "ות", "ים", "ת"}.Any(x => (value + x).Distance(value2) == precision);
         }
     }
 }

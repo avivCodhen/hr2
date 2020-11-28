@@ -14,13 +14,13 @@
         <e p="dist" t="Include">
           <e p="3rdpartylicenses.txt" t="Include" />
           <e p="index.html" t="Include" />
-          <e p="main-es2015.12ea42c0021d9da5e1b8.js" t="Include" />
-          <e p="main-es5.12ea42c0021d9da5e1b8.js" t="Include" />
+          <e p="main-es2015.bb51bb3eb36d5f262bdd.js" t="Include" />
+          <e p="main-es5.bb51bb3eb36d5f262bdd.js" t="Include" />
           <e p="polyfills-es2015.5b10b8fd823b6392f1fd.js" t="Include" />
           <e p="polyfills-es5.8e50a9832860f7cf804a.js" t="Include" />
           <e p="runtime-es2015.c5fa8325f89fc516600b.js" t="Include" />
           <e p="runtime-es5.c5fa8325f89fc516600b.js" t="Include" />
-          <e p="styles.e39ea667b5e6095b03a4.css" t="Include" />
+          <e p="styles.7e506b7ca95a04adb967.css" t="Include" />
         </e>
         <e p="e2e" t="Include">
           <e p="protractor.conf.js" t="Include" />
@@ -753,6 +753,7 @@
           </e>
         </e>
       </e>
+      <e p="openFiles.py" t="Include" />
       <e p="packages" t="ExcludeRecursive" />
       <e p="wwwroot" t="Include">
         <e p="favicon.ico" t="Include" />

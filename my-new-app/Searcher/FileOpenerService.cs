@@ -19,7 +19,8 @@ namespace my_new_app.Searcher
         private readonly SearchService _searchService;
         private readonly List<City> _cities = new List<City>();
 
-        public FileOpenerService(IHostEnvironment hostEnvironment, IConfiguration configuration, SearchService searchService)
+        public FileOpenerService(IHostEnvironment hostEnvironment, IConfiguration configuration,
+            SearchService searchService)
         {
             _hostEnvironment = hostEnvironment;
             _configuration = configuration;
@@ -43,15 +44,21 @@ namespace my_new_app.Searcher
                 : _configuration["Folder"];
 
             Console.WriteLine($"Reading files from {path}...");
-
+            Console.WriteLine("Updating...");
             var list = Directory.GetFiles(path);
+            Console.WriteLine($"from {list.Length}");
 
+            list = list.Where(x => !FilesRepo.Files.ContainsKey(x)).ToArray();
+
+            var index = 0;
             foreach (var file in list)
             {
                 try
                 {
-                    var text = _searchService.GetText(file);
-                    FilesRepo.Files[file] = CreateFileModel(text);
+                    index++;
+                    var openedFile = CreateFileModel(file);
+                    FilesRepo.Files[file] = openedFile;
+                    Console.Write($"\r{index} of {list.Length}  ");
                 }
                 catch (Exception e)
                 {
@@ -64,7 +71,16 @@ namespace my_new_app.Searcher
             return Task.CompletedTask;
         }
 
-        private OpenedFile CreateFileModel(string text)
+        private OpenedFile CreateFileModel(string file)
+        {
+            var text = _searchService.GetText(file);
+
+            var creationTime = File.GetCreationTime(file);
+            return new OpenedFile()
+                {Words = text.SplitFormat().ToList(), Text = text, CreationTime = creationTime, FilePath = file};
+        }
+
+        private string CityFromFile(string text)
         {
             var cityFromFile = "";
             var c = StringComparison.CurrentCultureIgnoreCase;
@@ -72,14 +88,14 @@ namespace my_new_app.Searcher
                 !(string.IsNullOrEmpty(x.Name) || string.IsNullOrEmpty(x.EnglishName))))
             {
                 if (text.Contains(city.Name, c) || text.Contains(city.EnglishName, c) ||
-                    text.Contains(city.Name.ReverseSearchText()))
+                    text.Contains(city.Name.Reverse()))
                 {
                     cityFromFile = city.Name;
                     break;
                 }
             }
 
-            return new OpenedFile() {Words = text.SplitFormat(), Text = text, City = cityFromFile};
+            return cityFromFile;
         }
 
         public Task StartAsync(CancellationToken cancellationToken)

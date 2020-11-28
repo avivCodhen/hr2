@@ -4,5 +4,6 @@ namespace HR.Models
     {
         public string Text { get; set; }
         public int Precision { get; set; }
+        public string SortBy { get; set; }
     }
 }
