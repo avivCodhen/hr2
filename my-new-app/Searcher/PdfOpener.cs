@@ -12,7 +12,7 @@ namespace HR.Searcher
         public string OpenFile(string fileName)
         {
             var bytes = File.ReadAllBytes(fileName);
-            var text = ConvertToText(bytes);
+            var text = ConvertToTextWithIText(fileName);
 
             if (text.IsHebrew())
                 text = text.ReverseText();
@@ -20,7 +20,7 @@ namespace HR.Searcher
         }
         
 
-        private static string ConvertToText(byte[] bytes)
+        private static string ConvertToTextWithTextSharper(byte[] bytes)
         {
             var sb = new StringBuilder();
 
@@ -36,6 +36,27 @@ namespace HR.Searcher
             }
 
             return sb.ToString();
+            
         }
+        
+        
+        private static string ConvertToTextWithIText(string fileName)
+        {
+            var sb = new StringBuilder();
+
+            
+            PdfReader pdfReader = new PdfReader(fileName);
+            for (int page = 1; page  < pdfReader.NumberOfPages; page++) {
+                LocationTextExtractionStrategy strategy = new LocationTextExtractionStrategy();
+                string currentText = PdfTextExtractor.GetTextFromPage(pdfReader, page, strategy);
+                currentText = Encoding.UTF8.GetString(ASCIIEncoding.Convert(
+                    Encoding.Default, Encoding.GetEncoding("windows-1255"), Encoding.Default.GetBytes(currentText)));
+                sb.Append(currentText);
+            }
+            return sb.ToString();
+            
+        }
+
+        
     }
 }

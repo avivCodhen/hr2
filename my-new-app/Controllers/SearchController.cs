@@ -53,12 +53,20 @@ namespace HR.Controllers
                 var fileModels = new ConcurrentDictionary<string, FileModel>();
                 var files = FilesRepo.Files.ToList();
 
+                var tasks = new List<Task>();
+                
                 foreach (var file in files)
                 {
-                    var fileModel = GetFileData(textModel.Precision, file, searchPrhases);
-                    if (fileModel != null) fileModels[file.Key] = fileModel;
+                    var task = Task.Run(() =>
+                    {
+                       
+                        var fileModel = GetFileData(textModel.Precision, file, searchPrhases);
+                        if (fileModel != null) fileModels[file.Key] = fileModel; 
+                    });
+                    tasks.Add(task);
                 }
 
+                Task.WaitAll(tasks.ToArray());
                 model.CorruptFiles = fileModels.Where(x => x.Value.IsCorrupt).Select(x => x.Value).ToList();
                 model.Files = fileModels.Where(x => !x.Value.IsCorrupt).Select(x => x.Value).ToList();
                 if (textModel.SortBy == "results")
