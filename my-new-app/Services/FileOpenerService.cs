@@ -2,6 +2,7 @@ using System;
 using System.Collections.Generic;
 using System.IO;
 using System.Linq;
+using System.Text.RegularExpressions;
 using System.Threading;
 using System.Threading.Tasks;
 using HR.Models;
@@ -14,16 +15,15 @@ namespace my_new_app.Searcher
 {
     public class FileOpenerService : IHostedService
     {
-        private readonly IHostEnvironment _hostEnvironment;
-        private readonly IConfiguration _configuration;
+        private readonly PathService _pathService;
         private readonly SearchService _searchService;
         private readonly List<City> _cities = new List<City>();
+        private int phoneIndex;
 
-        public FileOpenerService(IHostEnvironment hostEnvironment, IConfiguration configuration,
+        public FileOpenerService(PathService pathService,
             SearchService searchService)
         {
-            _hostEnvironment = hostEnvironment;
-            _configuration = configuration;
+            _pathService = pathService;
             _searchService = searchService;
             try
             {
@@ -39,9 +39,7 @@ namespace my_new_app.Searcher
 
         protected Task Execute()
         {
-            var path = _hostEnvironment.IsDevelopment()
-                ? Path.Combine(Environment.CurrentDirectory, "hr")
-                : _configuration["Folder"];
+            var path = _pathService.GetPath();
 
             Console.WriteLine($"Reading files from {path}...");
             Console.WriteLine("Updating...");
@@ -49,7 +47,9 @@ namespace my_new_app.Searcher
             Console.WriteLine($"from {list.Length}");
 
             list = list.Where(x => !FilesRepo.Files.ContainsKey(x)).ToArray();
-
+            var corrupts = FilesRepo.Files.Where(x => x.Value.IsCorrupt).Select(x=>x.Key);
+            list = list.Union(corrupts).ToArray();
+            
             var index = 0;
             foreach (var file in list)
             {
@@ -76,8 +76,27 @@ namespace my_new_app.Searcher
             var text = _searchService.GetText(file);
 
             var creationTime = File.GetCreationTime(file);
+            var words = text.SplitFormat().ToList();
+            var phone = GetPhoneFromFile(words);
+            var email = GetEmailFromFile(words);
+
             return new OpenedFile()
-                {Words = text.SplitFormat().ToList(), Text = text, CreationTime = creationTime, FilePath = file};
+            {
+                Email = email, Phone = phone, Words = words, Text = text, CreationTime = creationTime, FilePath = file
+            };
+        }
+
+        private string GetEmailFromFile(IEnumerable<string> words)
+        {
+            var email = words.Where(x => x.Contains("@"));
+            return email.FirstOrDefault();
+        }
+
+        private string GetPhoneFromFile(IEnumerable<string> words)
+        {
+            var phone = words.Where(x =>
+                Enumerable.Range(10, 3).Contains(x.Length) && x[0] == '0' && x[1] == '5');
+            return phone.FirstOrDefault();
         }
 
         private string CityFromFile(string text)

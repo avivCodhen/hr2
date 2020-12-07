@@ -4,6 +4,8 @@ import {Subject} from "rxjs";
 import {SearchModel} from "../search-model";
 import {environment} from "../../environments/environment";
 import {debounceTime, distinctUntilChanged} from "rxjs/operators";
+import {MatDialog} from "@angular/material/dialog";
+import {DialogConfirmComponent} from "../dialog-confirm/dialog-confirm.component";
 
 @Component({
   selector: 'app-home',
@@ -22,7 +24,7 @@ export class HomeComponent {
   isPrecision: boolean = true;
   sortBy: string = 'results';
 
-  constructor(private httpClient: HttpClient) {
+  constructor(private httpClient: HttpClient, public dialog: MatDialog) {
 
     this.searchInputEmit.pipe(debounceTime(2000)).subscribe((value) => {
       this.isLoading = true;
@@ -56,4 +58,50 @@ export class HomeComponent {
 
     }
   }
+
+  deleteItem(name: string) {
+    this.openDialog(name);
+  }
+
+
+  editMode(name: string) {
+    let file = this.model.files.find(x => x.name === name)
+    file.isEditMode = true;
+  }
+
+  onSaveEditing(name: string, newName: string) {
+
+  }
+
+  onEditChange($event: any, fileName: string) {
+    let file = this.model.files.find(x => x.name === fileName)
+    if (file) {
+      this.httpClient.put(environment.apiUrl + 'search/rename', {fileName: file.path, newName: $event}).subscribe((value: any) => {
+          file.name = $event;
+          file.isEditMode = false;
+          file.path = value.path;
+        }
+      );
+
+    }
+  }
+
+  openDialog(name:string) {
+    const dialogRef = this.dialog.open(DialogConfirmComponent, {data: {name:name}});
+
+    dialogRef.afterClosed().subscribe(result => {
+      if(result){
+        this.httpClient.put(environment.apiUrl + 'search/delete', {fileName: result.name}).subscribe(value => {
+          debugger;
+          const file = this.model.files.find(x => x.path === result.name)
+          const indexOf = this.model.files.indexOf(file)
+
+          if (indexOf != -1)
+            this.model.files.splice(indexOf, 1)
+
+        })
+      }
+    });
+  }
+
 }

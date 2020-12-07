@@ -10,7 +10,7 @@ namespace HR.Searcher
     {
         public static bool IsHebrew(this string value)
         {
-            return !System.Text.RegularExpressions.Regex.IsMatch(value, @"^[A-Z]+$");
+            return System.Text.RegularExpressions.Regex.IsMatch(value.Replace(" ", ""), @"^[א-ת]+$");
         }
 
         public static string Reverse(this string s)
@@ -22,12 +22,11 @@ namespace HR.Searcher
 
         public static IEnumerable<string> SplitFormat(this string text)
         {
-            return text
-                .Replace("\n", String.Empty)
-                .Replace("\r", String.Empty)
-                .Replace(",", String.Empty)
-                .Replace(":", String.Empty)
-                .Split(" ").Select(x => x.Trim())
+            return text.Replace
+                    ("\r", string.Empty)
+                .Split("\n")
+                .Select(x => x.Replace(",", " ").Replace(":", " "))
+                .SelectMany(x => x.Split(" "))
                 .Where(x => !string.IsNullOrEmpty(x)).ToList();
         }
 
@@ -73,34 +72,30 @@ namespace HR.Searcher
             return matrix[source1Length, source2Length];
         }
 
-        public static IEnumerable<string> Phrases(this IEnumerable<string> source)
-        {
-            var phrases = new List<string>();
-            for (int i = 0; i < source.Count(); i++)
-            {
-                var sb = new StringBuilder();
-                var leftOvers = source.Skip(i).ToList();
-                for (int j = 0; j < leftOvers.Count(); j++)
-                {
-                    var space = (j == leftOvers.Count() - 1) ? "" : " ";
-                    sb.Append(leftOvers[j] + space);
-                    if (j != 0)
-                        phrases.Add(sb.ToString());
-                }
-            }
-
-            return phrases;
-        }
-
         public static string ReverseText(this string text)
         {
             var s = string.Join(" ", text).Split(" ").Select(x => new string(x.IsHebrew() ? x.Reverse() : x)).ToList();
             return string.Join(" ", s);
         }
 
-        public static bool HebrewSexDistance(this string value, string value2, int precision)
+        public static bool HebrewSexContained(this string value, string text)
         {
-            return new[] {"ה", "ות", "ים", "ת"}.Any(x => (value + x).Distance(value2) == precision);
+            if (string.IsNullOrEmpty(value)) return false;
+            var words = value.Split(" ");
+            var restOfWords = string.Join(" ", words.Skip(1));
+            var hebrewSex = new[] {"ה", "ות", "ים", "ת"}.Select(s =>
+                words[0] + s + (restOfWords.Length > 0 ? " " + restOfWords : ""));
+            return hebrewSex.Any(x => text.Contains(x));
+        }
+
+        public static bool HebrewConnectionContained(this string value, string text)
+        {
+            if (string.IsNullOrEmpty(value)) return false;
+            var words = value.Split(" ");
+            var restOfWords = string.Join(" ", words.Skip(1));
+            var hebrewConnection = new[] {"ו", "ב", "כ", "ל"}.Select(s =>
+                s + words[0] + (restOfWords.Length > 0 ? " " + restOfWords : ""));
+            return hebrewConnection.Any(x => text.Contains(x));
         }
     }
 }

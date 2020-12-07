@@ -14,8 +14,8 @@
         <e p="dist" t="Include">
           <e p="3rdpartylicenses.txt" t="Include" />
           <e p="index.html" t="Include" />
-          <e p="main-es2015.bb51bb3eb36d5f262bdd.js" t="Include" />
-          <e p="main-es5.bb51bb3eb36d5f262bdd.js" t="Include" />
+          <e p="main-es2015.fdb9c937ad7bdee485d9.js" t="Include" />
+          <e p="main-es5.fdb9c937ad7bdee485d9.js" t="Include" />
           <e p="polyfills-es2015.5b10b8fd823b6392f1fd.js" t="Include" />
           <e p="polyfills-es5.8e50a9832860f7cf804a.js" t="Include" />
           <e p="runtime-es2015.c5fa8325f89fc516600b.js" t="Include" />
@@ -178,6 +178,12 @@
               <e p="counter.component.spec.ts" t="Include" />
               <e p="counter.component.ts" t="Include" />
             </e>
+            <e p="dialog-confirm" t="Include">
+              <e p="dialog-confirm.component.css" t="Include" />
+              <e p="dialog-confirm.component.html" t="Include" />
+              <e p="dialog-confirm.component.spec.ts" t="Include" />
+              <e p="dialog-confirm.component.ts" t="Include" />
+            </e>
             <e p="fetch-data" t="Include">
               <e p="fetch-data.component.html" t="Include" />
               <e p="fetch-data.component.ts" t="Include" />
@@ -221,9 +227,11 @@
       </e>
       <e p="Models" t="Include">
         <e p="City.cs" t="Include" />
+        <e p="DeleteModel.cs" t="Include" />
         <e p="ErrorViewModel.cs" t="Include" />
         <e p="FileModel.cs" t="Include" />
         <e p="OpenedFile.cs" t="Include" />
+        <e p="RenameFileModel.cs" t="Include" />
         <e p="SearchModel.cs" t="Include" />
         <e p="TextModel.cs" t="Include" />
       </e>
@@ -237,7 +245,6 @@
         <e p="launchSettings.json" t="Include" />
       </e>
       <e p="Searcher" t="Include">
-        <e p="FileOpenerService.cs" t="Include" />
         <e p="FilesRepo.cs" t="Include" />
         <e p="IOpener.cs" t="Include" />
         <e p="InteropOpener.cs" t="Include" />
@@ -245,6 +252,10 @@
         <e p="SearchService.cs" t="Include" />
         <e p="TextExtension.cs" t="Include" />
         <e p="WordOpener.cs" t="Include" />
+      </e>
+      <e p="Services" t="Include">
+        <e p="FileOpenerService.cs" t="Include" />
+        <e p="PathService.cs" t="Include" />
       </e>
       <e p="Startup.cs" t="Include" />
       <e p="appsettings.Development.json" t="Include" />
@@ -254,6 +265,7 @@
       <e p="hr" t="Include">
         <e p="-קורות חיים - עינת מילר  -  מנהלת חשבונות וחשבת שכר.docx" t="Include" />
         <e p="ATT99206 אור צור טלמיטינג.docx" t="Include" />
+        <e p="Abcgkdxz  יהודית פרחי.docx" t="Include" />
         <e p="Adan CV 1020  ביוכימאי.pdf" t="Include" />
         <e p="Algorithm_Developer_CV_-_Niv_Y.docx" t="Include" />
         <e p="AllJobs_1013857_ja6ient  אלירן הרשקו מהנדס בניין.docx" t="Include" />
@@ -263,7 +275,6 @@
         <e p="AllJobs_1438037_i61t5v4 רועי אוחיון  voip.docx" t="Include" />
         <e p="AllJobs_1452957_clekfrd.pdf" t="Include" />
         <e p="AllJobs_1592351_hcgnwd1 (2) דן כראדי.pdf" t="Include" />
-        <e p="AllJobs_1719424_bcgkdxz  יהודית פרחי.docx" t="Include" />
         <e p="AllJobs_1807938_fr86hz1-converted  סרגיי סוניצה NET.docx" t="Include" />
         <e p="AllJobs_1853247_aktjhf3  בנימין נעים הנדסאי בניין.pdf" t="Include" />
         <e p="AllJobs_1931841_eqsf84n.pdf" t="Include" />
@@ -301,7 +312,7 @@
         <e p="AllJobs_3436824_qpd8fui.docx" t="Include" />
         <e p="AllJobs_3445305_i3fsvb5  לירון אסא.docx" t="Include" />
         <e p="AllJobs_3510164_2r3eixt.docx" t="Include" />
-        <e p="AllJobs_3608984_vzdnsx1   דביר עופר מנהל פרוייקט בניה.docx" t="Include" />
+        <e p="AllJobs_3608984_vzdnsx1   דביר מנהל פרוייקט בניה.docx" t="Include" />
         <e p="AllJobs_3628473_dmkj7ae.docx" t="Include" />
         <e p="AllJobs_3628673_jr1pauy  אורי מדר מכשור ובקרה.docx" t="Include" />
         <e p="AllJobs_3788365_czv7wn8ננמרוד קילים.pdf" t="Include" />
@@ -349,7 +360,6 @@
         <e p="CV_From_587728_r762m5k.docx" t="Include" />
         <e p="CV_From_669398_dt4jxyn.docx" t="Include" />
         <e p="CV_From_723636_nhfwtc1ציפי רייזנר מנהלת חשבונות וחשבת שכר.docx" t="Include" />
-        <e p="C_C++_Developer_CV_-_Software_Engineer_-_Fares_F.docx" t="Include" />
         <e p="Compliance_-_KYC_-_Risk_Analyst_CV_-_Viktoria_L.docx" t="Include" />
         <e p="Customer_Success_Manager_CV_-_Hagai_T.pdf" t="Include" />
         <e p="Cv - English (1).pdf" t="Include" />
@@ -366,17 +376,14 @@
         <e p="Full-Stack_Developer_CV_-_Neil_M.docx" t="Include" />
         <e p="Full_Stack_Developer_CV_-_Dudu_S (1).docx" t="Include" />
         <e p="Full_Stack_Developer_CV_-_Dudu_S.docx" t="Include" />
-        <e p="Full_Stack_Developer_CV_-_Noam_D.docx" t="Include" />
         <e p="Full_Stack_Developer_CV_-_Nofar_C.docx" t="Include" />
         <e p="Fullstack_Developer_CV_-_Nir_E.docx" t="Include" />
         <e p="Fullstack_Developer_CV_-_Shaked_K.docx" t="Include" />
         <e p="Hosam Zoabi_E חוסאם זועבי מהנדס חשמל ואלקטרוניקה.docx" t="Include" />
         <e p="Infrastructure_Process_Project_and_Delivery_Manager_CV_-_Erez_H.docx" t="Include" />
         <e p="JTרם נחום 20.docx" t="Include" />
-        <e p="Java_C_Python_-_Software_Developer_CV_-_Dima_M.docx" t="Include" />
         <e p="Junior_C++_Software_Embedded_Developer_CV_-_Yakov_S.docx" t="Include" />
         <e p="Junior_Full_Stack_Engineer_CV_-_Idan_Z גם בודק תוכנה.docx" t="Include" />
-        <e p="Junior_Software_Developer_CV_-_Dima_M.docx" t="Include" />
         <e p="Junior_Software_Developer_CV_-_Elisheva_F.docx" t="Include" />
         <e p="KonstantinRubinovCVHebrew קונסטנטין רובינוב  פולסטאק NET.docx" t="Include" />
         <e p="Manual_QA_CV_-_Dimitri_H (1).docx" t="Include" />
@@ -407,7 +414,6 @@
         <e p="digger_1601982645_בני_לוגסי.docx" t="Include" />
         <e p="digger_1601987245_גל_סלומון.pdf" t="Include" />
         <e p="digger_1601999786_חן_הוכשטט.pdf" t="Include" />
-        <e p="digger_1602054428_כפיר_צוקרמן.docx" t="Include" />
         <e p="digger_1602056849_ניר_שבתאי (2).pdf" t="Include" />
         <e p="digger_1602056849_ניר_שבתאי (3).pdf" t="Include" />
         <e p="digger_1602069609_דניאל_בוטוליאנו.pdf" t="Include" />
@@ -417,7 +423,6 @@
         <e p="digger_1602152359_יקיר_מכלוף.pdf" t="Include" />
         <e p="digger_1602182543_Vladimir_Kaminsky.docx" t="Include" />
         <e p="digger_1602319690_אתי_מזרחי.docx" t="Include" />
-        <e p="digger_1602354242_ולדי_וסרמן.docx" t="Include" />
         <e p="digger_1602396277_אנטולי.docx" t="Include" />
         <e p="digger_1602429543_לירז_מירקין.docx" t="Include" />
         <e p="digger_1602487904_שירי_וולף.docx" t="Include" />
@@ -441,7 +446,6 @@
         <e p="digger_1603110945_ביתיה_נעמן.docx" t="Include" />
         <e p="digger_1603117798_מריאן (1).docx" t="Include" />
         <e p="digger_1603117798_מריאן.docx" t="Include" />
-        <e p="digger_1603126288_טלי_רבינוביץ.docx" t="Include" />
         <e p="digger_1603138436_אלירן_מנשה.pdf" t="Include" />
         <e p="digger_1603219116_שאול_יהודה.docx" t="Include" />
         <e p="digger_1603276521_רונן_רבייב.docx" t="Include" />
@@ -465,7 +469,6 @@
         <e p="digger_1604086717_מורן_אוחיון.docx" t="Include" />
         <e p="digger_1604131255_אופיר_רימבוים (1).pdf" t="Include" />
         <e p="digger_1604139933_נורית_קופרברג.pdf" t="Include" />
-        <e p="digger_1604239415_תמיר_עטיה.docx" t="Include" />
         <e p="digger_1604243159_Azita_Smilansky.docx" t="Include" />
         <e p="digger_1604254237_יעל_בר.docx" t="Include" />
         <e p="digger_1604262547_פנחס_ביטון.docx" t="Include" />
@@ -500,7 +503,6 @@
         <e p="אדוארד נודלמן מנהל חשבונות וחשב שכר חיפה.doc" t="Include" />
         <e p="אווה בנימין חשבת שכר ומנהל חשבונות קרית חיים.docx" t="Include" />
         <e p="אוסבצב טניה מנהל חשבונות וחשבת שכר.docx" t="Include" />
-        <e p="אורטל לוי ניהול אדמניסטרטיבי נתיבות.docx" t="Include" />
         <e p="אורי דר מתכנן מכני.pdf" t="Include" />
         <e p="אורית חזיז מנהלת חשבונות אשדוד.docx" t="Include" />
         <e p="אורית ישראלי מנהלת רכש  חיפה.docx" t="Include" />
@@ -512,7 +514,6 @@
         <e p="איזבלה וינצקי מנהלת חשבונות וחשבת שכר חיפה.docx" t="Include" />
         <e p="אילן שמש מיישם SAP.docx" t="Include" />
         <e p="אינה שטשוילי מנהלת חשבונות וחשבת שכר כרמיאל.docx" t="Include" />
-        <e p="אירינה בן אברהם מנהלת חשבונות בת ים.docx" t="Include" />
         <e p="איריס כהן מנהלת לשכה.pdf" t="Include" />
         <e p="איתמר כהן.docx" t="Include" />
         <e p="אלה פלוטניק מנהלת חשבונות ירושלים.docx" t="Include" />
@@ -538,7 +539,6 @@
         <e p="ארתור גברילוב מהנדס מכונות רמלה.pdf" t="Include" />
         <e p="אתי בורנשטיין מנהלת חשבונות וחשבת שכר נהריה.docx" t="Include" />
         <e p="אתי בורנשטיין מנהלת חשבונות מדופלמת.pdf" t="Include" />
-        <e p="אתי הסNET.docx" t="Include" />
         <e p="אתי כהן מנהלת חשבונות וחשבת שכר ראש העין.docx" t="Include" />
         <e p="בוסירה יעקוב.docx" t="Include" />
         <e p="בני לוגסי מנהל רשתות ומחשוב בצפון.docx" t="Include" />
@@ -556,12 +556,11 @@
         <e p="דוד דהן מנהל חשבונות אשדוד.docx" t="Include" />
         <e p="דומיניק ליברמן devopps.docx" t="Include" />
         <e p="דותן דסאו מנהל פרויקטים תעשיה וניהול.docx" t="Include" />
-        <e p="דימה מינץ.docx" t="Include" />
         <e p="דליה קרני חשבת שכר פתח תקוה.pdf" t="Include" />
         <e p="דנה איטלמן מנהלת חשבונות הוד השרון.docx" t="Include" />
         <e p="דנה לגזיאל מנהל מוצר פרודוקט מנגר.docx" t="Include" />
+        <e p="דפנה  משרד.pdf" t="Include" />
         <e p="דפנה עובדיה מנהלת חשבונות חיפה.docx" t="Include" />
-        <e p="דפנה קמרט מנהלת משרד.pdf" t="Include" />
         <e p="דקלה מנהלת משרד.docx" t="Include" />
         <e p="דרור כהן חשמלאי ראשי נהריה.docx" t="Include" />
         <e p="דרורית בר סימן טוב מנהלת חשבונות  רמלה.docx" t="Include" />
@@ -601,7 +600,6 @@
         <e p="יפעת ורדי מנהלת חשבונות קדימה.docx" t="Include" />
         <e p="יצחק מזין קורות חיים 05  מחסנאי ממוחשב.docx" t="Include" />
         <e p="ירון גרינגארט מנהל חשבונות וחשב שכר רמת גן.docx" t="Include" />
-        <e p="כפיר צוקרמן.docx" t="Include" />
         <e p="כרמית הרץ מנהלת חשבונות וחשבת שכר מודיעין.docx" t="Include" />
         <e p="לודמילה קסלסי מנהלת חשבונות וחשב שכר ירושלים.docx" t="Include" />
         <e p="ליאור מידן חשבת שכר רחובות.docx" t="Include" />
@@ -616,9 +614,9 @@
         <e p="מארי גסמן מקדמת שיווק חולון.docx" t="Include" />
         <e p="מוחמד זועבי-קורות חיים-אוקטובר 2020  הנדסאי חשמל בית חכם.docx" t="Include" />
         <e p="מוטי ואזנה מנהל חשבונות תל אביב.docx" t="Include" />
+        <e p="מורן  מנתחת מערכות ומנהלת פרויקטים.docx" t="Include" />
         <e p="מורן עשור חשבת שכר אורנית.docx" t="Include" />
-        <e p="מורן פרש מנתחת מערכות ומנהלת פרויקטים.docx" t="Include" />
-        <e p="מיה אלבז מעצבת פנים UI ו UX שרטטת.pdf" t="Include" />
+        <e p="מיה  מעצבת פנים UI ו UX שרטטת.pdf" t="Include" />
         <e p="מיטל עבודי חשבת שכר אשקלון.docx" t="Include" />
         <e p="מיכאל עמר מסגר רתך ומכונאי אחזקה קריית גת.docx" t="Include" />
         <e p="מינדל גולדבלט מנהלת חשבונות וחשבת שכר ירושלים.docx" t="Include" />
@@ -643,10 +641,8 @@
         <e p="נטי בן משה מנהלת חשבונות רעננה.docx" t="Include" />
         <e p="ניב יהב מהנדס חשמל ןפיתו אלגוריתמים.docx" t="Include" />
         <e p="ניב רוסו מעצבת פנים.pdf" t="Include" />
-        <e p="נלי קפוב קגן אדריכלות ועיצוב פנים פרדסיה.pdf" t="Include" />
         <e p="נתניה גלית צור הנדסאית אדריכלות.pdf" t="Include" />
         <e p="נתניה קרן כהן מנהלת חשבונות וחשבת שכר.docx" t="Include" />
-        <e p="סאמר עוואד מנהל חשבונות וחשב שכר נצרת.docx" t="Include" />
         <e p="סבטלנה וקסמן מנהלת חשבונות וחשבת שכר חיפה.docx" t="Include" />
         <e p="סוהיר אמארה מנהלת חשבונות מעלה עירון.docx" t="Include" />
         <e p="סימה ישראל מנהלת חשבונות בת ים.docx" t="Include" />
@@ -700,7 +696,6 @@
         <e p="קורות-חיים-חני-אמסלם.pdf" t="Include" />
         <e p="קורת חיים עלא אלעורגאן 91.docx" t="Include" />
         <e p="קטי פולק שירות לקוחות והזמנות רכש אשדוד.docx" t="Include" />
-        <e p="קטרינה דונצקו מנהלת חשבונות וחשבת שכר כלכלנית נתניה.docx" t="Include" />
         <e p="קלכמן דניאל מנהל חשבונות וחשב שכר קריית ביאליק.docx" t="Include" />
         <e p="קלנטרוב דמיטרי  java web   פול סטאק.docx" t="Include" />
         <e p="קמי ציוני גולדשטיין מנהלת חשבונות רמלה.docx" t="Include" />
@@ -742,7 +737,6 @@
         <e p="תהילה פיינגולד מנהלת חשבונות וחשבת שכר בית שמש.docx" t="Include" />
         <e p="תום איליי גובט - קורות חיים  הנדסאי מכונות אנרגיה גז.pdf" t="Include" />
         <e p="תמיר גבע מהנדס תעשיה וניהול אנליסט מתחיל צורן.docx" t="Include" />
-        <e p="תמרה רייכמן מנהלת חשבונות חיפה.docx" t="Include" />
       </e>
       <e p="my-new-app.csproj" t="IncludeRecursive" />
       <e p="obj" t="ExcludeRecursive">

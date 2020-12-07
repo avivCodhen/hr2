@@ -10,8 +10,9 @@
         public string Path { get; set; }
         public int Score { get; set; }
         public IEnumerable<string> Words { get; set; } = new List<string>();
-        public string City { get; set; }
         public DateTime CreationTime { get; set; }
         public bool IsCorrupt { get; set; }
+        public string Email { get; set; }
+        public string Phone { get; set; }
     }
 }

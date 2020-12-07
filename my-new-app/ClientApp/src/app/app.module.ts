@@ -14,6 +14,12 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import {MatSlideToggleModule} from '@angular/material/slide-toggle';
 import {MatSliderModule} from "@angular/material/slider";
 import {MatRadioModule} from '@angular/material/radio';
+import {MatIconModule} from '@angular/material/icon';
+import {MatButtonModule} from '@angular/material/button';
+import {MatMenuModule} from '@angular/material/menu';
+import {MatInputModule} from '@angular/material/input';
+import {MatDialogModule} from '@angular/material/dialog';
+import { DialogConfirmComponent } from './dialog-confirm/dialog-confirm.component';
 
 @NgModule({
   declarations: [
@@ -21,9 +27,16 @@ import {MatRadioModule} from '@angular/material/radio';
     NavMenuComponent,
     HomeComponent,
     CounterComponent,
-    FetchDataComponent
+    FetchDataComponent,
+    DialogConfirmComponent
   ],
+  entryComponents: [DialogConfirmComponent],
   imports: [
+    MatDialogModule,
+    MatInputModule,
+    MatMenuModule,
+    MatButtonModule,
+    MatIconModule,
     MatRadioModule,
     MatSlideToggleModule,
     [CommonModule],

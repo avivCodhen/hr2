@@ -7,6 +7,8 @@ namespace HR.Models
 {
     public class OpenedFile
     {
+        public string Phone { get; set; }
+        public string Email { get; set; }
         public string FilePath { get; set; }
         public string City { get; set; }
         public bool IsCorrupt { get; set; }

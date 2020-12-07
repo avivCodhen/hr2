@@ -42,30 +42,22 @@ namespace HR.Searcher
             int precision = 0)
         {
             var filePath = file.FilePath;
-            var words = file.Words;
             var text = file.Text;
             var model = new FileModel() {Name = Path.GetFileName(filePath), Path = filePath};
 
-            var matchedWords = words
-                .Where(x => searchWords.Any(s =>
-                    s.Distance(x) == precision || s.IsHebrew() && (s.Reverse().Distance(x) == precision) ||
-                    s.HebrewSexDistance(x, precision)))
-                .Distinct();
-
-            var matchedPhrases = searchWords.Phrases()
-                .Where(x => text.Contains(x, StringComparison.OrdinalIgnoreCase) || (x.IsHebrew() &&
-                    text.Contains(x.Reverse(), StringComparison.OrdinalIgnoreCase)));
+            var containedWords = searchWords.Where(
+                s => text.Contains(s, StringComparison.OrdinalIgnoreCase)
+                     || (s.IsHebrew() && text.Contains(s.Reverse())
+                         || (s.IsHebrew() && s.HebrewSexContained(text))
+                         || (s.IsHebrew() && s.HebrewConnectionContained(text)))
+            );
 
             var wordsFromFileName = searchWords.Where(x => model.Name.Contains(x));
-            
-            var finalWords = matchedWords.Union(matchedPhrases).Union(wordsFromFileName);
 
-            var w = finalWords.Where(x => !finalWords.Where(s => s != x).Contains(x));
             model.CreationTime = File.GetCreationTime(filePath);
-            model.Words = w;
+            model.Words = containedWords.Union(wordsFromFileName).Distinct();
             model.Score =
-                matchedWords.Count() +
-                (matchedPhrases.Count() * 10); // just to make sure words with matchedPhrases will be on top
+                model.Words.Count();
             return !model.Words.Any() ? null : model;
         }
     }

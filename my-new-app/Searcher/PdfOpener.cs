@@ -12,11 +12,9 @@ namespace HR.Searcher
         public string OpenFile(string fileName)
         {
             var bytes = File.ReadAllBytes(fileName);
-            var text = ConvertToTextWithIText(fileName);
+            var text = ConvertToTextWithTextSharper(bytes);
+            return text;
 
-            if (text.IsHebrew())
-                text = text.ReverseText();
-                return text;
         }
         
 
